@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <h1>El primer paso a tu solución</h1>
+
+    <form action="" method="">
+        
+        <label for="nombre">Nombre(s) *</label>
+        <label for="apellido">Apellido(s) *</label>
+        <br>
+        <input type="text" name="nombre" id="nombre" required>
+        <input type="text" name="apellido" id="apellido" required>
+        <br>
+
+        <label for="telefono">Teléfono *</label>
+        <label for="correo">Email *</label>
+        <br>
+        <input type="text" name="telefono" id="telefono" required>
+        <input type="email" name="correo" id="correo" required>
+        <br>
+
+        <label for="departamento">Departamento</label>
+        <label for="asunto">Asunto *</label>
+        <br>
+        <select name="departamento" id="departamento">
+            <option value="" disabled selected>Seleccione una opción</option>
+            <!-- PONER DEPARTAMENTOS REALES (si es que aplica)-->
+            <option value="ventas">Ventas</option>
+            <option value="hhrr">Recursos humanos</option>
+            <option value="academico">Academia</option>
+        </select>
+        <input type="text" name="asunto" id="asunto" required>
+        <br>
+
+        <label for="mensaje">Mensaje *</label>
+        <br>
+        <textarea name="mensaje" id="mensaje" required></textarea>
+        <br>
+    
+        <p><em>* Campos obligatorios</em></p>
+        <input type="submit" value="Cancelar">
+        <input type="submit" value="Enviar">
+        <!-- Cambio random -->
+    </form>
+</body>
+</html>
