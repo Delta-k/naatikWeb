@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #00aeef;
+}
+
+
+.retro {
+    margin: auto;
+    width: 1023px;
+    height: 509px;
+    border-radius: 50px;
+    background-color: white;
+    text-align: center;
+}
