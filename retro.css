@@ -5,19 +5,33 @@
 }
 
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+body {
     background: #00aeef;
 }
 
-.contenedor{
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
-    overflow: hidden;
+.contenedor {
+    margin: auto;
+    width: 1000px;
+    height: 509px;
+    border-radius: 40px;
+    background: white;
+    margin-top: 90px;
 }
 
+.texto {
+    padding: 160px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 20px;
+}
+/* 
 .retro {
     margin: auto;
     width: 1000px;
@@ -28,7 +42,4 @@ body{
     margin-top: 90px;
 }
 
-
-.contenedor .retro article {
-    padding-top: 160px;
-}
+ */
