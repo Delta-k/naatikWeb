@@ -1,9 +1,13 @@
 * {
     font-family: Arial;
+    margin: 0;
+    padding: 0;
 }
 
 .top {
     background-color: #00aeef;
+    height: 200px;
+    line-height: 500%;
 }
 
 .flip-card {
@@ -58,4 +62,5 @@
 footer {
     background-color: #000000;
     color: #FFFFFF;
+    height: 200px;
 }
