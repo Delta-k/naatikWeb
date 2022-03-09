@@ -22,6 +22,9 @@
     clear: both;
 }
  
+.fix{
+    clear: both;
+}
 .naatik-necesitas{
     background-color: #ffff;
     font-family: Arial, Helvetica, sans-serif;
@@ -31,17 +34,24 @@
 .fix{
     clear: both;
 }
-    
+
+.container{
+    display: flex;
+    align-items: center;
+}
+.fix{
+    clear: both;
+}
 .naatik-servicios{
     background-color: #00aeef;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
+    
 .fix{
     clear: both;
 }
-    
 .experiencia{
     background-color: #ffff;
     font-family: Arial, Helvetica, sans-serif;
@@ -81,6 +91,7 @@ nav ul li{
     clear: both;
 }
 
+
 .id-salud{
     text-align: left;
     width: 25%;
@@ -100,6 +111,7 @@ h2.salud{
 .fix{
     clear: both;
 }
+
 
 .id-comunicacion{
     width: 25%;
