@@ -1,0 +1,166 @@
+/* IMPORTANTE: las fuentes Icoomoon y minicart-font no estan en css */
+
+
+.naatik-home-nosotros{
+     background-color: #00aeef;
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: left;
+}
+.fix{
+    clear: both;
+}
+.naatik-home-sobre-nosotros{
+     background-color: #ffff;
+     text-align: right;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.fix{
+    clear: both;
+}
+ 
+.fix{
+    clear: both;
+}
+.naatik-necesitas{
+    background-color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.fix{
+    clear: both;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+.fix{
+    clear: both;
+}
+.naatik-servicios{
+    background-color: #00aeef;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+    
+.fix{
+    clear: both;
+}
+.experiencia{
+    background-color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.fix{
+    clear: both;
+}
+
+h2.experiencia{
+    text-align: right;
+}
+.fix{
+    clear: both;
+}
+.maps{
+    background-color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fix{
+    clear: both;
+}
+
+a.maps{
+    text-align: center;
+}
+
+nav ul li{
+    float:left;
+    list-style: none;
+    margin: 10px;
+}
+
+.fix{
+    clear: both;
+}
+
+
+.id-salud{
+    text-align: left;
+    width: 25%;
+    background-color: #fff;
+    text-align-last: center;
+    
+}
+
+.fix{
+    clear: both;
+}
+
+h2.salud{
+    text-align: center;
+}
+
+.fix{
+    clear: both;
+}
+
+
+.id-comunicacion{
+    width: 25%;
+    background-color: #fff;
+    text-align-last: center;
+    
+    
+}
+
+.fix{
+    clear: both;
+}
+
+h2.comunicacion{
+    text-align: center;
+}
+
+.id-energia{
+    width: 25%;
+    background-color: #fff;
+    text-align-last: center;
+}
+
+.fix{
+    clear: both;
+}
+
+h2.energia{
+    text-align: center;
+}
+
+.fix{
+    clear: both;
+}
+
+.id-transporte{
+    width: 25%;
+    background-color: #fff;
+    text-align-last: center;
+}
+
+.fix{
+    clear: both;
+}
+
+h2.transporte{
+    text-align: center;
+}
+
+.fix{
+    clear: both;
+}

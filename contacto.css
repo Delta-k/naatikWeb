@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(to bottom left, #27C0EF, #cfdee6);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* border: 5px solid purple; */
+}
+
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    }
+
+.Contacto {
+    /* border: 5px solid blue; */
+    background-color: #FDF8F8;
+    margin: 3% 15%;
+    border-radius: 15px;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: left;
+    font-weight: normal;
+    /* border: 3px solid black; */
+    margin: 2% 18%;
+}
+
+.form {
+    margin: 2% 18%;
+    /* border: 3px solid purple; */
+}
+
+.row {
+    clear: both;
+    margin-bottom: 2%;
+    overflow: hidden;
+    /* border: 2px solid blue; */
+}
+
+.tam50 {
+    width: 49%;
+    /* border: 2px solid red; */
+    margin-bottom: 1%;
+
+}
+
+.izquierda {
+    float: left;
+}
+
+.derecha {
+    float: right;
+    /* margin-left: 15%; */
+}
+
+
+.derecha input, .derecha label {
+    /*margin left 13 y text area */
+    box-sizing: content-box;
+    margin-left: 12.99%;
+}
+
+.tam100 {
+    margin: auto auto;
+    clear: both;
+    /* height: 100px;
+    padding-bottom: 2%; */
+    /* border: 2px solid blue; */
+}
+
+label {
+    font-size: 20px;
+    /* border: 2px solid green; */
+    clear: both;
+    display: block;
+    margin-bottom: 2%;
+}
+
+label.required::after {
+    content:"*";
+    color: red;
+    display: inline;
+}
+
+#asterisk {
+    color: red;
+    float: right;
+}
+
+#post-asterisk {
+    display: inline;
+    float: right;
+}
+
+input:not(.boton) {
+    width: 85%;
+    height: 35px;
+}
+
+select {
+    width: 85%;
+    height: 35px;
+}
+
+.botones {
+    /* border: 2px solid red; */
+    width: 49%;
+    float: right;
+}
+
+.boton {
+    height: 35px;
+    width: 35%;
+    float: right;
+    margin-left: 5%;
+}
+
+.enviar {
+    background-color: #00A8BD !important;
+    border-color: #00A8BD !important;
+    color: #ffffff;
+}
+
+.cancelar {
+    background-color: #D2D2D2 !important;
+    border-color: #D2D2D2 !important;
+    color: #ffffff;
+}
+
+textarea {
+    width: 99%;
+    height: 140px;
+}
+
+
+input, select, textarea {
+    background-color: #E6E6E6;
+    border-width: thin;
+    border-color: black;
+    border-radius: 3px;
+    -ms-box-sizing:border-box !important;
+    -moz-box-sizing:border-box !important;
+    box-sizing:border-box !important;
+    -webkit-box-sizing:border-box !important; 
+}
+
+p {
+    font-size: 15px;
+    font-style: italic;
+    text-align: right;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-right: 1%;
+    /* border: 2px solid yellow; */
+} 
+
+select option:disabled {
+    font-style: italic;
+    color: gray;
+    background-color: #E6E6E6;
+}
+
+select option {
+    background-color: #FDF8F8;
+}
