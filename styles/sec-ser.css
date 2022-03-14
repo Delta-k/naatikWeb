@@ -4,6 +4,37 @@
     padding: 0;
 }
 
+a:any-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.upper-nav {
+    color: #FFFFFF;
+    background-color: #16618F;
+    height: 40px;
+}
+
+.upper-nav-block {
+    padding-top: 8px;
+    margin-left: 72%;
+}
+
+a.nav-items-upper {
+    padding-left: 15px;
+}
+
+.main-nav{
+    padding-top: 30px;
+    margin-left: 60%;
+    color: #FFFFFF;
+}
+
+a.nav-items {
+    font-size: large;
+    padding-left: 30px;
+}
+
 .top {
     background-color: #00aeef;
     height: 250px;
@@ -12,7 +43,7 @@
 .apartado {
     color: #FFFFFF;
     font-size: 96px;
-    padding-top: 60px;
+    padding-top: 10px;
     padding-left: 60px;
 }
 
@@ -67,8 +98,7 @@
 }
 
 .flip-card-block {
-    /*margin-left: 65px;*/
-    margin-left: 95px;
+    /*margin-left: 95px;*/
     margin-top: 60px;
     width: 300px;
     height: 350px;
