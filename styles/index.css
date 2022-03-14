@@ -1,6 +1,6 @@
 
 .container-fluid {
-    border: 2px solid red !important;
+    border: 2px solid purple !important;
     
     
 }
@@ -11,14 +11,15 @@ p:not(.header p){
 /* ------ HEADER NAATIK -------- */
 
 .header .col-sm-6 {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: block;
     margin-bottom: 10%;
 }
 
 .header .col-sm-6 img {
-    border: 2px solid green;
-    margin-top: 10%;
+    /* border: 2px solid green; */
+    margin-top: 25%;
+    margin-left: 4%;
 }
 
 .header button{
@@ -27,13 +28,15 @@ p:not(.header p){
     background-color: #FFFFFF !important;
     border-color: #FFFFFF !important;
     color: #00A8DB;
-    height: 100px;
+    height: 50px;
+    width: 180px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .header {
     background: linear-gradient(to bottom left, #27C0EF, #cfdee6);
     border: 2px solid blue;
-    /* width: 100%; */
 }
 
 h1 {
@@ -51,7 +54,7 @@ h1, .header p {
     margin-top: 10%;
     margin-left: 10%;
     color: #FFFFFF;
-    /* border: 1px solid green; */
+    border: 1px solid green;
 } 
 
 /* Sobre nosotros */
