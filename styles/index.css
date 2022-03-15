@@ -1,0 +1,69 @@
+.container-fluid {
+    border: 2px solid purple !important;
+    width: 100%;
+}
+
+p:not(.header p){
+    text-align: justify;
+}
+
+/* ------ HEADER NAATIK -------- */
+
+.header .col-sm-6 {
+    /* border: 2px solid red; */
+    display: block;
+    /* margin-bottom: 10%; */
+}
+
+.header .col-sm-6 img {
+    /* border: 2px solid green; */
+    margin-top: 25%;
+    margin-left: 4%;
+}
+
+.header button{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    background-color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    color: #00A8DB;
+    height: 50px;
+    width: 180px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header {
+    background: linear-gradient(to bottom left, #27C0EF, #cfdee6);
+    border: 2px solid blue;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.header p{
+    font-size: 60px;
+    width: 70%;
+    font-weight: bold;
+}
+
+h1, .header p {
+    margin-top: 10%;
+    margin-left: 10%;
+    color: #FFFFFF;
+    /* border: 1px solid green; */
+} 
+
+/* Sobre nosotros */
+
+
+
+/* ------- FIN HEADER NAATIK -------- */
+
+
+
+
+
