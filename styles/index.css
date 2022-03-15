@@ -1,10 +1,49 @@
+/* nav */
+.upper-nav {
+    color: #FFFFFF;
+    background-color: #16618F;
+    height: 40px;
+}
+
+a {
+    color: #fff;
+}
+
+select{
+    color: #121314;
+}
+
+.upper-nav-block {
+    padding-top: 8px;
+    margin-left: 70%;
+}
+
+a.nav-items-upper {
+    padding-left: 15px;
+}
+
+.main-nav{
+    padding-top: 35px;
+    margin-left: 55%;
+    color: #FFFFFF;
+}
+
+a.nav-items {
+    font-size: large;
+    padding-left: 30px;
+}
+
 .container-fluid {
-    border: 2px solid purple !important;
+    /* border: 2px solid purple !important; */
     width: 100%;
 }
 
-p:not(.header p){
+p:not(.header p, .nosotros p){
     text-align: justify;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 /* ------ HEADER NAATIK -------- */
@@ -17,8 +56,8 @@ p:not(.header p){
 
 .header .col-sm-6 img {
     /* border: 2px solid green; */
-    margin-top: 25%;
-    margin-left: 4%;
+    margin-left: 12%;
+    margin-top: 10%;
 }
 
 .header button{
@@ -36,7 +75,7 @@ p:not(.header p){
 
 .header {
     background: linear-gradient(to bottom left, #27C0EF, #cfdee6);
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 h1 {
@@ -57,11 +96,122 @@ h1, .header p {
     /* border: 1px solid green; */
 } 
 
+/* ------- FIN HEADER NAATIK -------- */
+
+/* ------- NOSOTROS ----------*/
+
+.nos1 {
+    padding: 0;
+    width: 50%;
+    float: left;
+}
+
+.nos2 {
+    width: 50%;
+    float: right;
+}
+
+#aboutus {
+    width: 75%;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.nosotros h2, .necesitas h2 {
+    margin-top: 30%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #034D82;
+
+}
+
+.nosotros p {
+    width: 80%;
+    color: #90A3B4;
+    font-size: 18px;
+    /* border: 1px solid green; */
+    line-height: 40px;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+
+.nosotros a {
+    font-weight: bold;
+    color: #04AADD;
+    font-size: 18px;
+}
+/* ------- FIN NOSOTROS ----------*/
+
+
+/* Cards */
+#cards {
+    background: #121314;
+    box-sizing: border-box;
+}
+
+body > ul {
+    position: absolute;
+    top: 50%;
+    width: 800px;
+    height: 200px; 
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -130px;
+}
+
+ul > li {
+    width: 25%;
+    list-style-type: none;
+    position: absolute;
+    /* top: 0; */
+    padding: 20px;
+    height: 200px; 
+    opacity: 0;
+    padding-top: 40px;
+    text-align: center;
+    transition: 1s opacity; 
+}
+
+.active {
+    opacity: 1;
+}
+
+#cards p {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #646566;
+    line-height: 1.5em;
+}
+
+#cards strong { 
+    color: #646566;
+    font-weight: 700;
+    font-size: 60px; 
+    line-height: 100px; 
+}
+
+/* NAATIK TIENE LO QUE NECESITAS */
+.ten {
+    padding: 0;
+    width: 50%;
+    float: left;
+}
+
+.ten h2 {
+    margin-top: 30%;
+    margin-left: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #034D82;
+}
+
+.ten p{
+    margin-left: 80px;
+    width: 600px;
+}
 /* Sobre nosotros */
 
 
-
-/* ------- FIN HEADER NAATIK -------- */
 
 
 
