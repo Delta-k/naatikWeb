@@ -2,7 +2,7 @@
 .upper-nav {
     color: #FFFFFF;
     background-color: #16618F;
-    height: 40px;
+    height: 100%;
 }
 
 a {
@@ -14,23 +14,23 @@ select{
 }
 
 .upper-nav-block {
-    padding-top: 8px;
-    margin-left: 70%;
+    padding: 0.5%;
+    margin-left: 62%;
 }
 
 a.nav-items-upper {
-    padding-left: 15px;
+    padding-left: 7%;
 }
 
 .main-nav{
-    padding-top: 35px;
-    margin-left: 55%;
+    padding-top: 2%;
+    margin-left: 60%;
     color: #FFFFFF;
 }
 
 a.nav-items {
     font-size: large;
-    padding-left: 30px;
+    padding-left: 5%;
 }
 
 .container-fluid {
@@ -142,6 +142,51 @@ h1, .header p {
 }
 /* ------- FIN NOSOTROS ----------*/
 
+/* --- NAATIK TIENE LO QUE NECESITAS ----- */
+
+.necesitas div {
+    border: 1px solid red;
+}
+
+.necesitas h2 {
+    margin-top: 20%;
+    margin-left: 10%;
+    line-height: 50px;
+}
+
+.nec1 {
+    width: 45%;
+    float: left;
+}
+
+.nec1 p, .nec1 li {
+    margin-left: 10%;
+    width: 80%;
+    color: #90A3B4;
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+
+.nec2 {
+    width: 55%;
+    float: right;
+}
+
+ul {
+    /* padding-left: 20%; */
+    border: 2px solid green;
+}
+
+.necesitas a {
+    font-weight: bold;
+    color: #04AADD;
+    font-size: 18px;
+    margin-left: 15%;
+}
+
+/* --- FIN TODO LO QUE NECESITAS */
 
 /* Cards */
 #cards {
@@ -149,7 +194,7 @@ h1, .header p {
     box-sizing: border-box;
 }
 
-body > ul {
+/* body > ul {
     position: absolute;
     top: 50%;
     width: 800px;
@@ -163,14 +208,14 @@ ul > li {
     width: 25%;
     list-style-type: none;
     position: absolute;
-    /* top: 0; */
+    top: 0;
     padding: 20px;
     height: 200px; 
     opacity: 0;
     padding-top: 40px;
     text-align: center;
     transition: 1s opacity; 
-}
+} */
 
 .active {
     opacity: 1;
@@ -190,25 +235,6 @@ ul > li {
     line-height: 100px; 
 }
 
-/* NAATIK TIENE LO QUE NECESITAS */
-.ten {
-    padding: 0;
-    width: 50%;
-    float: left;
-}
-
-.ten h2 {
-    margin-top: 30%;
-    margin-left: 80px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #034D82;
-}
-
-.ten p{
-    margin-left: 80px;
-    width: 600px;
-}
 /* Sobre nosotros */
 
 
