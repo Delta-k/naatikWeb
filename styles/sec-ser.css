@@ -9,55 +9,68 @@ a:any-link {
     text-decoration: none;
 }
 
+/*Menu superior*/
 .upper-nav {
     color: #FFFFFF;
     background-color: #16618F;
-    height: 40px;
+    height: 30px;
 }
 
 .upper-nav-block {
-    padding-top: 8px;
-    margin-left: 72%;
+    padding-top: 5px;
+    margin-left: 77%;
+    font-size: small;
 }
 
 a.nav-items-upper {
     padding-left: 15px;
 }
 
+/*Menu principal*/
 .main-nav{
-    padding-top: 30px;
-    margin-left: 60%;
+    padding-top: 25px;
+    margin-left: 55%;
     color: #FFFFFF;
 }
 
 a.nav-items {
-    font-size: large;
+    font-size: medium;
     padding-left: 30px;
 }
 
+/*Seccion de titulo y descripcion*/
 .top {
     background-color: #00aeef;
-    height: 250px;
+    height: 200px;
 }
 
 .apartado {
     color: #FFFFFF;
-    font-size: 96px;
-    padding-top: 10px;
+    font-size: 70px;
+    padding-top: 5px;
     padding-left: 60px;
 }
 
 .desc {
     color: #034D82;
-    font-size: 20px;
-    padding-top: 20px;
+    font-size: 17px;
+    padding-top: 10px;
     padding-left: 60px;
+}
+
+/*Estilo para todas las flip-cards*/
+.flip-card-block {
+    margin-top: 60px;
+    width: 250px;
+    height: 300px;
+    float: left;
+    text-align: center;
 }
 
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     perspective: 1000px;
 }
 
@@ -97,20 +110,12 @@ a.nav-items {
     text-align: justify;
 }
 
-.flip-card-block {
-    /*margin-left: 95px;*/
-    margin-top: 60px;
-    width: 300px;
-    height: 350px;
-    float: left;
-    text-align: center;
-}
-
 .info {
     margin: 20px;
-
+    font-size: 14px;
 }
 
+/*Todos los estilos dentro del footer*/
 .fix {
     clear: both;    
 }
@@ -123,9 +128,35 @@ footer {
     padding: 30px;
 }
 
-.footer-menu {
-    margin-left: 50%;
+.footer-content {
+    width: 100%;
+}
+
+td.footer-social {
+    vertical-align: top;
+    padding-left: 50px; 
     line-height: 50px;
-    width: 40%;
+}
+
+#face-button, #twitter-button, #youtube-button {
+    background-color: transparent;
+    border-radius: 30px;
+    width: 42px; 
+    height: 40px;
+    border: none;
+}
+
+td.footer-menu {
+    vertical-align: top;
+}
+
+.footer-menu-table {
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.rights{
+    margin-top: 45px;
     text-align: center;
 }
