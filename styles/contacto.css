@@ -1,3 +1,39 @@
+/* nav */
+.upper-nav {
+    color: #ffffff;
+    background-color: #16618F;
+    height: 100%;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+select{
+    color: #121314;
+}
+
+.upper-nav-block {
+    padding: 0.5%;
+    margin-left: 62%;
+}
+
+a.nav-items-upper {
+    padding-left: 7%;
+}
+
+.main-nav{
+    padding-top: 2%;
+    margin-left: 60%;
+    color: #ffffff;
+}
+
+a.nav-items {
+    font-size: large;
+    padding-left: 5%;
+}
+
+
 body {
     margin: 0;
     height: 100%;
@@ -104,7 +140,7 @@ input:not(.boton) {
     height: 35px;
 }
 
-select {
+#departamento{
     width: 85%;
     height: 35px;
 }
@@ -169,4 +205,24 @@ select option:disabled {
 
 select option {
     background-color: #FDF8F8;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 300px;
+    padding: 50px;
+}
+
+footer p{
+    text-align: justify;
+    font-style: normal;
+}
+
+.footer-menu {
+    margin-left: 60%;
+    line-height: 50px;
+    width: 40%;
+    text-align: justify;
 }
