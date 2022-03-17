@@ -1,42 +1,235 @@
-h1{
-    font-size: xx-large;
-    text-align: center;
-}
-h2{
-    font-size: xx-large;
-    text-align: center;
-}
-p{
-    text-align: justify;
-    padding: 1em;
+/* nav */
+.upper-nav {
+    color: #ffffff;
+    background-color: #16618F;
+    height: 100%;
 }
 
-.eTrabajo p{
-    text-align: center;
+a {
+    color: rgb(255, 255, 255);
 }
-.center{
-    text-align: center;
+
+select{
+    color: #121314;
 }
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+.upper-nav-block {
+    padding: 0.5%;
+    margin-left: 62%;
+}
+
+a.nav-items-upper {
+    padding-left: 7%;
+}
+
+.main-nav{
+    padding-top: 2%;
+    margin-left: 60%;
+    color: #ffffff;
+}
+
+a.nav-items {
+    font-size: large;
+    padding-left: 5%;
+}
+
+.container-fluid {
+    /* border: 2px solid purple !important; */
+    width: 100%;
+}
+
+p:not(.header p, .nosotros p){
+    text-align: justify;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+/* --- HEADER ---*/
+
+.header {
+    background-color: #27C1EF;
+}
+
+h1{
+    margin-top: 3%;
+    font-size: 80px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+.header p {
+    width: 70%;
+    color: #034D82;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+/* -- EQUIPO DE TRABAJO -- */
+
+.eTrabajo .col-sm-4 {
+    margin-top: 3%;
+}
+
+.eTrabajo h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #034D82;
+    font-weight: normal;
+    margin-top: 5%;
+}
+
+.eTrabajo .izquierda {
+    /* border: 1px solid green; */
+    width: 50%;
+    float: left;
+}
+
+.eTrabajo .derecha {
+    /* border: 1px solid red; */
+    width: 50%;
+    float: right;
+}
+
+.eTrabajo .abajo {
+    /* border: 1px solid yellow; */
+    width: 50%;
+    float: inline-block;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.eTrabajo img {
+    float: left;
+    margin-left: 10%;
+    margin-right: 5%;
+    border-radius: 50%;
+    width: 35%;
+}
+
+.eTrabajo h3 {
+    margin-top: 10%;
+    font-size: 20px;
+    color: #034D82;
+}
+
+.eTrabajo p {
+    text-align: justify;
+    width: 90%;
+}
+
+.eTrabajo h3, .eTrabajo p {
+    margin-left: 5%;
+    /* border: 1px solid purple; */
+}
+
+/* --- MISION ---- */
+
+.mision {
+    background-color: #27C1EF;
+    margin-top: 5%;
+}
+
+.mision h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #034D82;
+    font-weight: normal;
+    margin-top: 3%;
+}
+
+.mision p {
+    text-align: justify;
+    width: 70%;
+    margin: 3% 15%;
+    font-size: 16px;
+}
+
+/* ---- VALORES ----- */
+
+.val .col-sm-6 {
+    padding: 0px 0px !important;
+}
+
+.val1 {
+    float: left;
     width: 50%;
 }
 
-.valores{
-    width: 80%;
-    margin-left: 10%;
-}
-.val h2{
-    margin-top: 18%;
+.val2 {
+    float: right;
+    width: 50%;
 }
 
-.objetivo{
-    width: 80%;
-    margin-left: 10%;
+.val h2{
+    margin-top: 10%;
+    font-size: 40px;
+    text-align: center;
+    color: #034D82;
+    font-weight: normal;
+}
+
+.val p {
+    color: #034D82;
+    text-align: justify;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 6%;
+    font-size: 16px;
+}
+
+.val img {
+    width: 100%;
+}
+
+/* ---- OBJETIVO ---- */
+
+.obj .col-sm-6 {
+    padding: 0px 0px !important;
+}
+
+.obj img {
+    width: 100%;
 }
 
 .obj h2{
-    margin-top: 18%;
+    margin-top: 10%;
+    font-size: 40px;
+    text-align: center;
+    color: #034D82;
+    font-weight: normal;
+}
+
+.obj p {
+    color: #034D82;
+    text-align: justify;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 6%;
+    font-size: 16px;
+}
+
+
+/*FOOTER*/
+
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 350px;
+    padding: 50px;
+}
+
+.footer-menu {
+    margin-left: 60%;
+    line-height: 50px;
+    width: 40%;
+    text-align: justify;
 }
