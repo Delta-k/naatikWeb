@@ -36,6 +36,7 @@ a.nav-items {
 .container-fluid {
     /* border: 2px solid purple !important; */
     width: 100%;
+    padding: 0 0 !important;
 }
 
 p:not(.header p, .nosotros p){
@@ -145,7 +146,7 @@ h1, .header p {
 /* --- NAATIK TIENE LO QUE NECESITAS ----- */
 
 .necesitas h2 {
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 10%;
     line-height: 50px;
 }
@@ -153,6 +154,7 @@ h1, .header p {
 .nec1 {
     width: 45%;
     float: left;
+    margin-bottom: 4%;
     /* border: 1px solid red; */
 }
 
@@ -173,7 +175,7 @@ h1, .header p {
     font-size: 18px;
     line-height: 40px;
     margin-top: 1%;
-    list-style-image: url("/../img/listado_necesitas.svg");
+    list-style-image: url("../img/listado_necesitas.svg");
     /* border: 1px solid blue; */
 }
 
@@ -189,7 +191,7 @@ h1, .header p {
 
 ul {
     /* border: 1px solid yellow; */
-    margin-bottom: 3%;
+    margin-bottom: 5%;
 }
 
 .necesitas a {
@@ -200,11 +202,226 @@ ul {
     /* border: 1px solid green; */
 }
 
-/* --- FIN TODO LO QUE NECESITAS */
-
 /* --- INICIA PARTE LEO ---- */  
 
+.container{
+    background: #effbff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 1px solid purple;
+    width: 100%;
+}
+
+h2.tar{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: #034D82;
+    text-align: center;
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+
+h2.titulo{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #034D82;
+}
+
+.lorems{
+    width: 100%;
+    border: 1px solid yellow;
+    color: #8EA9C1;
+    text-align: right;
+}
+
+.tarjetas{
+    display: flex;
+    align-items: center;
+    background: #effbff;
+    margin: 2% auto;
+    border: 1px solid green;
+}
+
+.tarjetitas{
+    width: 16%;
+    height: 300px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    text-align-last: center;
+    text-align-last: center;
+    border: 1px solid red;
+    padding: 2%;
+    margin-left: 4%;
+}
+
+.fix{
+    clear: both;
+}
+
+
+h2.tar{
+    text-align: center;
+}
+
+.imagen{
+    width: 56px;
+    height: 56px;
+    left: 64px;
+    top: 2875px;
+    bottom: 100px;
+}
+
+section a{
+    width: 591px;
+    height: 171px;
+    left: 621px;
+    top: 3184px;
+    background: #034D82;
+    color:#fff;
+    border-radius: 4px;
+}
+
+.tarjetas a {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+    color: #00A8DB;
+    height: 50px;
+    width: 180px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 /* --- TERMINA PARTE LEO --- */
+
+
+/* --- 30 AÑOS DE EXPERIENCIA ---- */
+
+.exp1{
+    width: 55%;
+    /* border: 1px solid red; */
+}
+
+.exp1 h2 {
+    margin-top: 5%;
+    font-size: 30px;
+    color: #034D82;
+    line-height: 50px;
+    margin-left: 6%;
+    margin-right: 8%;
+    text-align: justify;
+}
+
+.exp1 p {
+    margin-left: 6%;
+    width: 80%;
+    color: #90A3B4;
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.exp2 {
+    width: 45%;
+    margin-bottom: 2%;
+    /* border: 1px solid green; */
+}
+
+.exp2 h2 {
+    margin-top: 10%;
+    font-size: 80px;
+    color: #034D82;
+    margin-left: 10%;
+    text-align: left;
+}
+
+#comilla {
+    /* border: 1px solid green; */
+    width: 10%;
+    float: left;
+    margin-top: 5%;
+    text-decoration: dotted;
+    font-style: italic;
+}
+
+.stars {
+    margin-top: 10%;
+    color: #FAAD13;
+    font-size: 25px;
+}
+
+.slide > p:not(.stars){
+    color: #90A3B4;
+    font-size: 18px;
+    line-height: 40px;
+    margin-bottom: 3%;
+    /* margin-left: 2%; */
+    /* border: 1px solid blue; */
+    display: inline-block;
+}
+
+.perfil img {
+    border-radius: 50%;
+    width: 15%;
+    float: left;
+    margin-right: 3%;
+}
+
+.perfil h3 {
+    color: #034D82;
+    font-weight: bold;
+    padding-top: 1%;
+}
+
+.position {
+    color: #90A3B4;
+    /* border: 1px solid red; */
+    width: 90%;
+    font-weight: bold;
+}
+
+/* Animación */
+
+#slideshow {
+    overflow: hidden;
+    height: 330px;
+    width: 500px;
+    /* margin: 0 auto; */
+}
+
+.slide-wrapper {
+    height: 330px;
+    /*width: 500 * número clases*/
+    width: 1500px;
+    -webkit-animation: slide 18s ease infinite;
+}
+
+.slide {
+    float: left;
+    height: 330px;
+    width: 450px;
+    /* margin-right: 25px; */
+}
+
+@-webkit-keyframes slide {
+    0% {margin-left: 0px;}
+    20% {margin-left: 0px;}
+    30% {margin-left: -500px;}
+    50% {margin-left: -500px;}
+    60% {margin-left: -1000px;}
+    90% {margin-left: -1000px;}
+  }
+  
+
+/* --- FIN 30 AÑOS ---- */
 
 /* Cards */
 #cards {
