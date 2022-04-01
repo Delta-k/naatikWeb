@@ -1,3 +1,6 @@
+*{
+    font-family: 'Mulish', sans-serif;;
+}
 /* nav */
 .upper-nav {
     color: #ffffff;
@@ -64,6 +67,18 @@ p:not(.header p, .nosotros p){
 .header button{
     margin-top: 10%;
     margin-bottom: 10%;
+    margin-left: 10%;
+    background-color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    color: #00A8DB;
+    height: 50px;
+    width: 180px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container button{
+    margin-bottom: 3%;
     margin-left: 10%;
     background-color: #FFFFFF !important;
     border-color: #FFFFFF !important;
@@ -206,15 +221,14 @@ ul {
 
 .container{
     background: #effbff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Mulish', sans-serif;
     text-align: center;
     border: 1px solid purple;
     width: 100%;
 }
 
 h2.tar{
-    font-family: 'DM Sans';
-    font-style: normal;
+    font-family: 'Mulish', sans-serif;;
     font-weight: 700;
     font-size: 20px;
     line-height: 32px;
@@ -225,8 +239,7 @@ h2.tar{
 }
 
 h2.titulo{
-    font-family: 'DM Sans';
-    font-style: normal;
+    font-family: 'Mulish', sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 52px;
@@ -457,7 +470,7 @@ ul > li {
 }
 
 #cards p {
-    font-family: sans-serif;
+    font-family: 'Mulish', sans-serif;
     font-size: 13px;
     color: #646566;
     line-height: 1.5em;
@@ -476,22 +489,52 @@ ul > li {
 
 
 /* Footer */
+/*Todos los estilos dentro del footer*/
+.fix {
+    clear: both;    
+}
 
 footer {
+    margin-top: 60px;
     background-color: #000000;
     color: #FFFFFF;
-    height: 350px;
-    padding: 50px;
+    height: 300px;
+    padding: 30px;
 }
 
-.footer-menu {
-    margin-left: 60%;
+.footer-content {
+    width: 100%;
+}
+
+td.footer-social {
+    vertical-align: top;
+    padding-left: 50px; 
     line-height: 50px;
-    width: 40%;
-    text-align: justify;
 }
 
+#face-button, #twitter-button, #youtube-button {
+    background-color: transparent;
+    border-radius: 30px;
+    width: 42px; 
+    height: 40px;
+    border: none;
+}
 
+td.footer-menu {
+    vertical-align: top;
+}
 
+.footer-menu-table {
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+}
 
+.rights{
+    margin-top: 45px;
+    text-align: center;
+}
 
+th {
+    text-align: center;
+}

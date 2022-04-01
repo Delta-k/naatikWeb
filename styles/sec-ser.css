@@ -1,5 +1,5 @@
 * {
-    font-family: Arial;
+    font-family: 'Mulish', sans-serif;;
     margin: 0;
     padding: 0;
 }
@@ -118,7 +118,8 @@ img {
 
 .cuatro{
   width: 1000px;
-  margin-left: 335px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 .texto {
   padding: 10px;

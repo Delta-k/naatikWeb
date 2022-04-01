@@ -1,3 +1,6 @@
+*{
+    font-family: 'Mulish', sans-serif;
+}
 /* nav */
 .upper-nav {
     color: #ffffff;
@@ -150,24 +153,56 @@ h1{
     font-size: 16px;
 }
 
-/* ---- VALORES ----- */
+/* ---- Vision ----- */
+
+.vis .col-sm-6 {
+    padding: 0px 0px !important;
+}
+
+.vis1 {
+    float: left;
+    width: 50%;
+}
+
+.vis2 {
+    float: right;
+    width: 50%;
+}
+
+.vis h2{
+    margin-top: 15%;
+    font-size: 40px;
+    text-align: center;
+    color: #034D82;
+    font-weight: normal;
+}
+
+.vis p {
+    color: #034D82;
+    text-align: justify;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 6%;
+    font-size: 16px;
+}
+
+.vis img {
+    width: 100%;
+}
+
+/* ---- Valores ---- */
 
 .val .col-sm-6 {
     padding: 0px 0px !important;
 }
 
-.val1 {
-    float: left;
-    width: 50%;
-}
-
-.val2 {
-    float: right;
-    width: 50%;
+.val img {
+    width: 100%;
 }
 
 .val h2{
-    margin-top: 10%;
+    margin-top: 20%;
     font-size: 40px;
     text-align: center;
     color: #034D82;
@@ -184,52 +219,52 @@ h1{
     font-size: 16px;
 }
 
-.val img {
-    width: 100%;
-}
-
-/* ---- OBJETIVO ---- */
-
-.obj .col-sm-6 {
-    padding: 0px 0px !important;
-}
-
-.obj img {
-    width: 100%;
-}
-
-.obj h2{
-    margin-top: 10%;
-    font-size: 40px;
-    text-align: center;
-    color: #034D82;
-    font-weight: normal;
-}
-
-.obj p {
-    color: #034D82;
-    text-align: justify;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 6%;
-    font-size: 16px;
-}
-
 
 /* --- FOOTER ---- */
 
+.fix {
+    clear: both;    
+}
 
 footer {
     background-color: #000000;
     color: #FFFFFF;
-    height: 350px;
-    padding: 50px;
+    height: 300px;
+    padding: 30px;
 }
 
-.footer-menu {
-    margin-left: 60%;
+.footer-content {
+    width: 100%;
+}
+
+td.footer-social {
+    vertical-align: top;
+    padding-left: 50px; 
     line-height: 50px;
-    width: 40%;
-    text-align: justify;
+}
+
+#face-button, #twitter-button, #youtube-button {
+    background-color: transparent;
+    border-radius: 30px;
+    width: 42px; 
+    height: 40px;
+    border: none;
+}
+
+td.footer-menu {
+    vertical-align: top;
+}
+
+.footer-menu-table {
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.rights{
+    margin-top: 45px;
+    text-align: center;
+}
+th {
+    text-align: center;
 }

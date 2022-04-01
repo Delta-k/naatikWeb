@@ -4,38 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;800&display=swap" rel="stylesheet">>
     <link rel="stylesheet" href="styles/contacto.css">
     <title>Contacto</title>
 </head>
 <body>
-     <!-- Menu superior -->
-     <div class="upper-nav">
-        <div class="upper-nav-block">
-            <a class="nav-items-upper">Lenguaje</a>
-            <select class="menu">
-                <option selected value="Español">ES</option>
-                <option value="Ingles">EN</option>
-            </select>
-            <a class="nav-items-upper" href="#">Pasantías</a>
-            <a class="nav-items-upper" href="#">Socios</a>
-            <a class="nav-items-upper" href="#">EsteEsBúsqueda</a>
-        </div>
-    </div>
-
-    <div class="top">
-        <div class="main-nav">
-            <!--Aqui empieza la barra de navegación principal-->
-            <a class="nav-items" href="index.html">Inicio</a>
-            <a class="nav-items" href="nosotros.html">Nosotros</a>
-            <a class="nav-items" href="sectores.html">Sectores </a>
-            <a class="nav-items" href="servicios.html">Servicios</a>
-            <a class="nav-items" href="contacto.html">Contacto</a>
-        </div>
-    </div>
-
     <div class="Contacto">
         <h1>El primer paso a tu solución...</h1>
         
@@ -89,44 +64,13 @@
                 <div class="row">
                     <div class="botones">
                         <input type="submit" value="Enviar" class="boton enviar">
-                        <input type="button" value="Cancelar" class="boton cancelar">
+                        <!-- <input type="button" value="Cancelar" class="boton cancelar"> -->
+                        <button type="button" class="boton cancelar" onclick="mostrarIndex()">Cancelar</button>
                     </div> 
                 </div>
             </form>
         </div>
     </div>
-
-    <!-- footer -->
-    <footer>
-        <div>
-            <p>Encuéntranos en nuestras redes sociales</p>
-        </div>
-
-        <div>
-            <table class="footer-menu">
-                <tr>
-                    <th>Sitio</th>
-                    <th>Políticas</th>
-                    <th>Contacto</th>
-                </tr>
-                <tr>
-                    <td><a href="nosotros.html">Nosotros</a></td>
-                    <td><a href="priv.html">Aviso de privacidad</a></td>
-                    <td><a href="contacto.html">Agendar cita</a></td>
-                </tr>
-                <tr>
-                    <td><a href="servicios.html">Servicios</a></td>
-                    <td><a href="preguntasFrecuentes.html">Preguntas frecuentes</a></td>
-                    <td><a href="#">Internships</a></td>
-                </tr>
-                <tr>
-                    <td><a href="servicios.html">Sectores</a></td>
-                </tr>
-                <tr>
-                    <td><a href="contacto.html">Contacto</a></td>
-                </tr>
-            </table>
-        </div>
-    </footer>
 </body>
+<script src="./js/contacto.js"></script>
 </html>
