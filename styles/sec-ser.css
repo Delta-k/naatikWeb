@@ -64,15 +64,11 @@ a.nav-items {
   width: 200px;
   height: 260px;
 /*   border: 1px solid #CCC; */
-  margin: 40px 0;
+  margin: 20px 15px;
   perspective: 600px;
- 
-
+  justify-content: space-between;
 }
 
-.scene p {
-  text-align: center;
-}
 
 .card {
   position: relative;
@@ -106,7 +102,7 @@ img {
 }
 
 .card__face--front {
-  background: #005490;
+  background: #ffffff;
 }
 
 .card__face--back {
@@ -118,9 +114,14 @@ img {
 
 .cuatro{
   width: 1000px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin: auto;
 }
+
+.cuatro p {
+  margin-top: 20px;
+  text-align: center;
+}
+
 .texto {
   padding: 10px;
   font-size: 12px;
