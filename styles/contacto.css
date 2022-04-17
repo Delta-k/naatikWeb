@@ -162,12 +162,14 @@ input:not(.boton) {
     background-color: #00A8BD !important;
     border-color: #00A8BD !important;
     color: #ffffff;
+    font-weight: bold;
 }
 
 .cancelar {
     background-color: #D2D2D2 !important;
     border-color: #D2D2D2 !important;
     color: #ffffff;
+    font-weight: bold;
 }
 
 textarea {

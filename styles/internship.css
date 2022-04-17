@@ -1,0 +1,45 @@
+body {
+    margin: 0 0;
+}
+
+*{
+    font-family: 'Mulish', sans-serif;;
+}
+
+/* nav */
+.upper-nav {
+    background-color: #16618F;
+    height: 100%;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+.upper-nav-block {
+    padding: 0.5%;
+    margin-left: 68%;
+}
+
+a.nav-items-upper {
+    padding-left: 7%;
+}
+
+/* Segundo nav*/
+/*Menu principal*/
+.main-nav{
+    padding-top: 25px;
+    margin-left: 55%;
+    color: #FFFFFF;
+}
+
+a.nav-items {
+    font-size: medium;
+    padding-left: 30px;
+}
+
+/*Seccion de titulo y descripcion*/
+.top {
+    background-color: #00aeef;
+    height: 200px;
+}
