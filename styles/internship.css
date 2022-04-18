@@ -248,3 +248,54 @@ a.nav-items {
     width: 75%;
     margin-bottom: 4%;
 }
+
+
+/* ------ Todos los estilos dentro del footer ------- */
+.fix {
+    clear: both;    
+}
+
+footer {
+    margin-top: 60px;
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 300px;
+    padding: 30px;
+}
+
+.footer-content {
+    width: 100%;
+}
+
+td.footer-social {
+    vertical-align: top;
+    padding-left: 50px; 
+    line-height: 50px;
+}
+
+#face-button, #twitter-button, #youtube-button {
+    background-color: transparent;
+    border-radius: 30px;
+    width: 42px; 
+    height: 40px;
+    border: none;
+}
+
+td.footer-menu {
+    vertical-align: top;
+}
+
+.footer-menu-table {
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.rights{
+    margin-top: 45px;
+    text-align: center;
+}
+
+th {
+  text-align: center;
+}
