@@ -8,6 +8,9 @@
     height: 100%;
 }
 
+.container-fluid{
+    padding: 0;
+}
 .top{
     background: #27C1EF;
     height: 50px;
@@ -22,7 +25,7 @@ select{
 
 .upper-nav-block {
     padding: 0.5%;
-    margin-left: 62%;
+    margin-left: 72%;
 }
 
 a.nav-items-upper {
@@ -31,7 +34,7 @@ a.nav-items-upper {
 
 .main-nav{
     padding: 1%;
-    margin-left: 50%;
+    margin-left: 61%;
     color: #ffffff;
 }
 
