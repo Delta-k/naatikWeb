@@ -1,31 +1,31 @@
-body {
-    margin: 0 0;
-}
-
-*{
+* {
     font-family: 'Mulish', sans-serif;;
+    margin: 0;
+    padding: 0;
 }
 
-/* nav */
+a:any-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*Menu superior*/
 .upper-nav {
+    color: #FFFFFF;
     background-color: #16618F;
-    height: 100%;
-}
-
-a {
-    color: rgb(255, 255, 255);
+    height: 30px;
 }
 
 .upper-nav-block {
-    padding: 0.5%;
-    margin-left: 68%;
+    padding-top: 5px;
+    margin-left: 77%;
+    font-size: small;
 }
 
 a.nav-items-upper {
-    padding-left: 7%;
+    padding-left: 15px;
 }
 
-/* Segundo nav*/
 /*Menu principal*/
 .main-nav{
     padding-top: 25px;
@@ -41,5 +41,261 @@ a.nav-items {
 /*Seccion de titulo y descripcion*/
 .top {
     background-color: #00aeef;
-    height: 200px;
+    overflow: auto;
+    padding-bottom: 2%;
+}
+
+.apartado {
+    color: #FFFFFF;
+    font-size: 70px;
+    padding-top: 5px;
+    padding-left: 60px;
+}
+
+/* ------- Caratula --------- */
+
+.caratula {
+    background-color: white;
+    margin-bottom: 0;
+}
+
+.joinus {
+    width: 45%;
+    float: left;
+    margin-bottom: 0;
+}
+
+.joinus img {
+    width: 100%;
+}
+
+.descripcion {
+    width: 54%;
+    float: right;
+    /* border: 1px solid blue; */
+    margin-top: 4%;
+}
+
+.descripcion p{
+    font-size: 140%;
+    color: #034D82;
+    padding: 0 10%;
+    text-align: justify;
+    line-height: 180%;
+}
+
+.descripcion li {
+    list-style: none;
+    background-image: url("/img/list.png");
+    background-repeat: no-repeat;
+    background-size: 2%;
+    background-position: left center;
+    font-size: 140%;
+    color: #034D82;
+    padding: 0 5%;
+    text-align: justify;
+    line-height: 180%;
+}
+
+.descripcion ul {
+    margin-left: 15%;
+}
+
+/* ------- Detalles ------- */
+.detalles {
+    clear: both;
+    float: none;
+    background-color: #E6D5D3;
+    overflow: auto;
+}
+
+/* --- Beneficios --- */
+.beneficios {
+    width: 50%;
+    float: left;
+}
+
+.beneficios h2 {
+    font-size: 250%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.beneficios li{
+    list-style-image: url("../img/listado_necesitas.svg");
+    font-size: 130%;
+    color: #034D82;
+    padding: 1% 2%;
+    text-align: justify;
+    line-height: 180%;
+}
+
+.beneficios ul {
+    margin-left: 10%;
+    width: 75%;
+    margin-bottom: 4%;
+}
+
+/* --- Actividades --- */
+.actividades {
+    width: 50%;
+    float: right;
+}
+
+.actividades h2 {
+    font-size: 250%;
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+}
+
+.actividades li{
+    list-style-image: url("../img/listado_necesitas.svg");
+    font-size: 130%;
+    color: #034D82;
+    padding: 1% 2%;
+    text-align: justify;
+    line-height: 180%;
+}
+
+.actividades ul {
+    margin-left: 10%;
+    width: 80%;
+}
+
+/* --- Documentación --- */
+.documentacion {
+    width: 50%;
+    float: right;
+}
+
+.documentacion h2 {
+    font-size: 250%;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+}
+
+.documentacion li{
+    list-style-image: url("../img/listado_necesitas.svg");
+    font-size: 130%;
+    color: #034D82;
+    padding: 1% 2%;
+    text-align: justify;
+    line-height: 180%;
+}
+
+.documentacion ul {
+    margin-left: 10%;
+    width: 80%;
+}
+
+/* ------- Requisitos ------- */
+
+.requisitos {
+    clear: both;
+    float: none;
+    background-color: white;
+    overflow: auto;
+}
+
+.requisitos h2 {
+    font-size: 250%;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+
+/* --- Parte 1 --- */
+.req1 {
+    width: 50%;
+    float: left;
+}
+
+.req1 li{
+    list-style-image: url("../img/listado_necesitas.svg");
+    font-size: 130%;
+    color: #034D82;
+    padding: 1% 2%;
+    text-align: justify;
+    line-height: 180%;
+}
+
+.req1 ul {
+    margin-left: 10%;
+    width: 75%;
+    margin-bottom: 4%;
+}
+
+/* --- Parte 2 --- */
+.req2 {
+    width: 50%;
+    float: left;
+}
+
+.req2 li{
+    list-style-image: url("../img/listado_necesitas.svg");
+    font-size: 130%;
+    color: #034D82;
+    padding: 1% 2%;
+    text-align: justify;
+    line-height: 180%;
+}
+
+.req2 ul {
+    margin-left: 10%;
+    width: 75%;
+    margin-bottom: 4%;
+}
+
+
+/* ------ Todos los estilos dentro del footer ------- */
+.fix {
+    clear: both;    
+}
+
+footer {
+    margin-top: 60px;
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 300px;
+    padding: 30px;
+}
+
+.footer-content {
+    width: 100%;
+}
+
+td.footer-social {
+    vertical-align: top;
+    padding-left: 50px; 
+    line-height: 50px;
+}
+
+#face-button, #twitter-button, #youtube-button {
+    background-color: transparent;
+    border-radius: 30px;
+    width: 42px; 
+    height: 40px;
+    border: none;
+}
+
+td.footer-menu {
+    vertical-align: top;
+}
+
+.footer-menu-table {
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.rights{
+    margin-top: 45px;
+    text-align: center;
+}
+
+th {
+  text-align: center;
 }
