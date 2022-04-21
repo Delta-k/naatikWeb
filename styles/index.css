@@ -5,7 +5,7 @@
 .upper-nav {
     color: #ffffff;
     background-color: #16618F;
-    height: 100%;
+    width: 100%;
 }
 
 a {
@@ -39,7 +39,7 @@ a.nav-items {
 .container-fluid {
     /* border: 2px solid purple !important; */
     width: 100%;
-    padding: 0 0 !important;
+    /* padding: 0 0 !important; */
 }
 
 p:not(.header p, .nosotros p){
@@ -79,7 +79,7 @@ p:not(.header p, .nosotros p){
 
 .container button{
     margin-bottom: 3%;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     background-color: #FFFFFF !important;
     border-color: #FFFFFF !important;
     color: #00A8DB;
@@ -223,7 +223,7 @@ ul {
     background: #effbff;
     font-family: 'Mulish', sans-serif;
     text-align: center;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     width: 100%;
 }
 
@@ -250,7 +250,7 @@ h2.titulo{
 
 .lorems{
     width: 100%;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     color: #8EA9C1;
     text-align: right;
 }
@@ -260,7 +260,7 @@ h2.titulo{
     align-items: center;
     background: #effbff;
     margin: 2% auto;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .tarjetitas{
@@ -270,9 +270,9 @@ h2.titulo{
     border-radius: 8px;
     text-align-last: center;
     text-align-last: center;
-    border: 1px solid red;
+    border: 3px solid rgba(193, 191, 191, .3);
     padding: 2%;
-    margin-left: 4%;
+    margin: 4%;
 }
 
 .fix{
