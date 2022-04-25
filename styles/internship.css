@@ -250,6 +250,40 @@ a.nav-items {
 }
 
 
+/* ------- POSTÚLATE -------*/
+
+.aplica {
+    background-color: #EFFBFF;
+    clear: both;
+    float: none;
+    overflow: auto;
+}
+
+.info {
+    width: 50%;
+    float: left;
+}
+
+.inscribir {
+    width: 50%;
+    float: right;
+}
+
+.row {
+    clear: both;
+    margin-bottom: 2%;
+    overflow: hidden;
+}
+
+.col1 {
+    float: left;
+    border: 1px solid red;
+}
+
+.col2 {
+    float: right;
+}
+
 /* ------ Todos los estilos dentro del footer ------- */
 .fix {
     clear: both;    
