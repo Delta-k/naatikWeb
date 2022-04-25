@@ -12,7 +12,7 @@
     <div class="upper-nav">
         <div class="upper-nav-block">
             <a class="nav-items-upper">Lenguaje</a>
-            <select>
+            <select id="lenguaje">
                 <option value="Español">ES</option>
                 <option value="Ingles">EN</option>
             </select>
@@ -106,74 +106,88 @@
     </div>
 
     <div class="aplica">
-        <form action="" method="">
-
+        <div class="row">
+            <h2>¡Postúlate!</h2>
+            <p>Únete al equipo de trabajo y conviértete en un profesional de la Ciencia de Datos</p>
+        </div>
+        <form action="" method="POST">
             <div class="info">
-                <h2>¡Póstulate!</h2>
-                <p>Únete al equipo de trabajo y conviértete en un profesional de la Ciencia de Datos</p>
                 <div class="row">
                     <div class="col1">
-                        <label for="nombre">Nombre(s) <br></label>
-                        <input type="text" name="nombre" id="nombre">
+                        <label for="nombre" class="required">Nombre(s) </label>
+                        <input type="text" name="nombre" id="nombre" required>
                     </div>
                     <div class="col2">
-                        <label for="apellido">Apellido(s) <br></label>
-                        <input type="text" name="apellido" id="apellido">
+                        <label for="apellido" class="required">Apellido(s) </label>
+                        <input type="text" name="apellido" id="apellido" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col1">
-
+                        <label for="universidad" class="required">Universidad </label>
+                        <input type="text" name="universidad" id="universidad" required>
                     </div>
-                    <label for="universidad">Universidad <br></label>
-                    <input type="text" name="universidad" id="universidad">
 
-                    <div class="col1">
-                        <label for="carrera">Carrera <br></label>
-                        <input type="text" name="carrera" id="carrera">
-                    </div>
                     <div class="col2">
-                        <label for="semestre">Semestre <br></label>
-                        <input type="number" name="semestre" id="semestre" min="1" max="10">
+                        <label for="carrera" class="required">Carrera </label>
+                        <input type="text" name="carrera" id="carrera" required>
                     </div>
                 </div>
                 <div class="row">
-                    <label for="promedio">Promedio (entre 1 y 100) <br></label>
-                    <input type="number" name="universidad" id="universidad" min="1" max="100">
+                    <div class="col1a">
+                        <label for="semestre" class="required">Semestre </label>
+                        <input type="number" name="semestre" id="semestre" min="1" max="10" required>
+                    </div>
+                    <div class="col2a">
+                        <label for="promedio" class="required">Promedio </label>
+                        <input type="number" name="universidad" id="universidad" min="1" max="100" required>
+                    </div>
+                    <div class="col3a">
+                        <label for="departamento" class="required">Departamento</label>
+                        <select name="departamento" id="departamento">
+                            <option value="" disabled selected>Seleccione una opción...</option>
+                            <option value="ventas">Ventas</option>
+                            <option value="hhrr">Recursos humanos</option>
+                            <option value="academico">Academia</option>
+                        </select>
+                    </div>
                 </div>
             </div>
     
             <div class="inscribir">
                 <div class="row">
                     <div class="col1">
-                        <label for="historial">Historial académico: <br></label>
+                        <label for="historial" class="required ha">Historial académico: </label>
+                        <!-- <img src="img/upload_file.svg" alt=""> -->
                         <input type="file"
                         id="historial" name="historial"
-                        accept="image/png, image/jpeg">
+                        accept="application/pdf">
                     </div>
                     <div class="col2">
-                        <label for="cv"> Curriculum Vitae: <br></label>
+                        <label for="cv" class="required cv"> Curriculum Vitae: </label>
                         <input type="file"
                         id="cv" name="cv"
-                        accept="image/png, image/jpeg">
+                        accept="application/pdf">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col1">
-                        <label for="curp">CURP: <br></label>
+                        <label for="curp" class="required curp">CURP: </label>
                         <input type="file"
                         id="curp" name="curp"
-                        accept="image/png, image/jpeg">
+                        accept="application/pdf">
                     </div>
                     <div class="col2">
-                        <label for="ine">INE: <br></label>
+                        <label for="ine" class="required ine">INE: </label>
                         <input type="file"
                         id="ine" name="ine"
-                        accept="image/png, image/jpeg">
+                        accept="application/pdf">
                     </div>
                 </div>
             </div>
-            <input type="submit" value="Enviar" class="boton enviar">
+            <div class="row">
+                <input type="submit" value="Enviar" class="boton enviar">
+            </div>
         </form>
     </div>
 

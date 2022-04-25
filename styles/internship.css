@@ -63,16 +63,17 @@ a.nav-items {
     width: 45%;
     float: left;
     margin-bottom: 0;
+    display: flex;
 }
 
 .joinus img {
     width: 100%;
+
 }
 
 .descripcion {
     width: 54%;
     float: right;
-    /* border: 1px solid blue; */
     margin-top: 4%;
 }
 
@@ -105,7 +106,7 @@ a.nav-items {
 .detalles {
     clear: both;
     float: none;
-    background-color: #E6D5D3;
+    background-color: #EFFBFF;
     overflow: auto;
 }
 
@@ -252,6 +253,21 @@ a.nav-items {
 
 /* ------- POSTÚLATE -------*/
 
+.aplica h2 {
+    font-size: 250%;
+    margin-top: 3%;
+    margin-left: 10%;
+    color: #034D82;
+}
+
+.aplica p {
+    font-size: 130%;
+    color: #034D82;
+    padding: 1% 4%;
+    text-align: justify;
+    line-height: 180%;
+}
+
 .aplica {
     background-color: #EFFBFF;
     clear: both;
@@ -275,13 +291,92 @@ a.nav-items {
     overflow: hidden;
 }
 
-.col1 {
+.info .row {
+    margin-left: 5%;
+}
+
+.col1, .col3a {
     float: left;
-    border: 1px solid red;
+    width: 50%;
 }
 
 .col2 {
     float: right;
+    width: 50%;
+}
+
+.col1a {
+    width: 17.5%;
+    float: left;
+    margin-right: 10%;
+}
+
+.col2a {
+    width: 17.5%;
+    float: left;
+    margin-right: 5%;
+}
+
+label.required::after {
+    content:"*";
+    color: red;
+    display: inline;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, select:not(#lenguaje) {
+    background-color: #FFFFFF;
+    border-width: thin;
+    border-color: black;
+    border-radius: 3px;
+    -ms-box-sizing:border-box !important;
+    -moz-box-sizing:border-box !important;
+    box-sizing:border-box !important;
+    -webkit-box-sizing:border-box !important; 
+}
+
+
+.enviar {
+    margin-top: 2%;
+    margin-left: 45%;
+    background-color: #00A8BD !important;
+    border-color: #00A8BD !important;
+    color: #ffffff;
+    font-weight: bold;
+    width: 10%;
+    height: 35px;
+}
+
+input:not(.boton), select:not(#lenguaje) {
+    width: 85%;
+    height: 25px;
+    box-sizing: content-box;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.inscribir label {
+    background-color: #FFFFFF;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 50%;
+    height: 70px;
+    text-align: center;
+}
+
+.inscribir .col1 label {
+    margin-left: 20%;
+}
+
+.inscribir .col2 label {
+    margin-left: 10%;
 }
 
 /* ------ Todos los estilos dentro del footer ------- */
