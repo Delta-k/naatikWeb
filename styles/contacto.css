@@ -96,7 +96,6 @@ h1 {
 
 
 .derecha input, .derecha label {
-    /*margin left 13 y text area */
     box-sizing: content-box;
     margin-left: 12.99%;
 }
