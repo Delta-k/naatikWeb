@@ -87,7 +87,7 @@ a.nav-items {
 
 .descripcion li {
     list-style: none;
-    background-image: url("/img/list.png");
+    background-image: url("../img/list.png");
     background-repeat: no-repeat;
     background-size: 2%;
     background-position: left center;
@@ -368,6 +368,10 @@ input:not(.boton), select:not(#lenguaje) {
 
 input[type="file"] {
     display: none;
+}
+
+.info input {
+    padding-left: 2%;
 }
 
 .inscribir label {

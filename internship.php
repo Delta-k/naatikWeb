@@ -1,46 +1,62 @@
 <?php
-    require_once 'database.php';
+    //require_once 'database.php';
 
     $pdo = new PDO('mysql:host=localhost;dbname=2005B_01', 'u2005_01', 'Q$Tcbo%2nW1K', array(
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_EMULATE_PREPARES => false
     ));
 
-    $nombre = $_POST["nombre"];
-    $apellido = $_POST["apellido"];
-    $universidad = $_POST["universidad"];
-    $carrera = $_POST["carrera"];
-    $semestre = $_POST["semestre"]
-    $promedio = $_POST["promedio"];
-    $idDepartamento = $_POST["departamento"];
+    if (!empty($_POST)) {
+        $nombre = $_POST["nombre"];
+        $apellido = $_POST["apellido"];
+        $universidad = $_POST["universidad"];
+        $carrera = $_POST["carrera"];
+        $semestre = $_POST["semestre"];
+        $promedio = $_POST["promedio"];
+        $idDepartamento = $_POST["departamento"];
 
-    try {
-        // Iniciar transaccion
-        $pdo->beginTransaction();
+        mkdir("uploads/" . $nombre . "_" . $apellido . "/", 0700);
+        $target_dir = "uploads/" . $nombre . "_" . $apellido . "/"; 
+        $target_file_historial = $target_dir . basename($_FILES["historial"]["name"]);
+        $target_file_cv = $target_dir . basename($_FILES["cv"]["name"]);
+        $target_file_curp = $target_dir . basename($_FILES["curp"]["name"]);
+        $target_file_ine = $target_dir . basename($_FILES["ine"]["name"]);
 
-        // Subir query a la base de datos
-        $sql = "INSERT INTO Intern (nombre, apellido, universidad, carrera, semestre, promedio, idDepartamento) VALUES (?, ?, ?, ?, ?, ?, ?)";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute(array(
-            $nombre;
-            $apellido;
-            $universidad;
-            $carrera;
-            $semestre;
-            $promedio;
-            $idDepartamento;
-            )
-        );
+        try {
+            // Subir archivos a la carpeta uploads
+            move_uploaded_file($_FILES["historial"]["tmp_name"], $target_file_historial);
+            move_uploaded_file($_FILES["cv"]["tmp_name"], $target_file_cv);
+            move_uploaded_file($_FILES["curp"]["tmp_name"], $target_file_curp);
+            move_uploaded_file($_FILES["ine"]["tmp_name"], $target_file_ine);
 
-        // Comprometer los cambios
-        $pdo->commit();
-    }
 
-    catch(Exception $e){
-        // Mostrar el mensaje de error
-        echo $e->getMessage();
-        // Retirar los cambios
-        $pdo->rollBack();
+            // Iniciar transaccion
+            $pdo->beginTransaction();
+
+            // Subir query a la base de datos
+            $sql = "INSERT INTO Intern (nombre, apellido, universidad, carrera, semestre, promedio, idDepartamento) VALUES (?, ?, ?, ?, ?, ?, ?)";
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute(array(
+                $nombre,
+                $apellido,
+                $universidad,
+                $carrera,
+                $semestre,
+                $promedio,
+                $idDepartamento
+                )
+            );
+
+            // Comprometer los cambios
+            $pdo->commit();
+        }
+
+        catch(Exception $e){
+            // Mostrar el mensaje de error
+            echo $e->getMessage();
+            // Retirar los cambios
+            $pdo->rollBack();
+        }
     }
 ?>
 
@@ -158,7 +174,7 @@
             <h2>¡Postúlate!</h2>
             <p>Únete al equipo de trabajo y conviértete en un profesional de la Ciencia de Datos</p>
         </div>
-        <form action="" method="POST">
+        <form action="" method="POST" enctype="multipart/form-data">
             <div class="info">
                 <div class="row">
                     <div class="col1">
@@ -188,22 +204,20 @@
                     </div>
                     <div class="col2a">
                         <label for="promedio" class="required">Promedio </label>
-                        <input type="number" name="universidad" id="universidad" min="1" max="100" required>
+                        <input type="number" name="promedio" id="promedio" min="1" max="100" required>
                     </div>
                     <div class="col3a">
                         <label for="departamento" class="required">Departamento</label>
                         <select name="departamento" id="departamento">
                             <option value="" disabled selected>Seleccione una opción...</option>
                             <?php
-                                $pdo = Database::conect();
                                 $query = 'SELECT * FROM Departamento';
                                 foreach ($pdo->query($query) as $row) {
-                                    if ($row['idDepartamento'] == $departamento)
-                                        echo "<option selected value = '" . $row['idDepartamento'] . "'>" . $row["nombre"] . "</option>";
-                                    else
+                                    if ($row['idDepartamento'] == $idDepartamento)
                                         echo "<option value = '" . $row['idDepartamento'] . "'>" . $row["nombre"] . "</option>";
+                                    else
+                                        echo "<option value = " . $row["idDepartamento"] . ">" . $row["nombre"] . "</option>";
                                 }
-                                Database::disconnect();
                             ?>
                         </select>
                     </div>
@@ -216,7 +230,7 @@
                         <label for="historial" class="required ha">&nbsp; Historial académico:                   
                             <input type="file"
                             id="historial" name="historial"
-                            accept="application/pdf">
+                            accept="application/pdf" required>
                             <br>
                             <img src="img/upload_fila50.png" alt="Sube historial">
                         </label>
@@ -226,7 +240,7 @@
                         <label for="cv" class="required cv">&nbsp; Curriculum Vitae: 
                             <input type="file"
                             id="cv" name="cv"
-                            accept="application/pdf">
+                            accept="application/pdf" required>
                             <br>
                             <img src="img/upload_fila50.png" alt="Sube cv">
                         </label>
@@ -237,7 +251,7 @@
                         <label for="curp" class="required curp">&nbsp; CURP: 
                             <input type="file"
                             id="curp" name="curp"
-                            accept="application/pdf">
+                            accept="application/pdf" required>
                             <br>
                             <img src="img/upload_fila50.png" alt="Sube curp">
                         </label>
@@ -246,7 +260,7 @@
                         <label for="ine" class="required ine">&nbsp;INE: 
                             <input type="file"
                             id="ine" name="ine"
-                            accept="application/pdf">
+                            accept="application/pdf" required>
                             <br>
                             <img src="img/upload_fila50.png" alt="Sube INE">
                         </label>
@@ -254,7 +268,7 @@
                 </div>
             </div>
             <div class="row">
-                <input type="submit" value="Enviar" class="boton enviar">
+                <input type="submit" value="Enviar" name="submit" class="boton enviar">
             </div>
         </form>
     </div>
