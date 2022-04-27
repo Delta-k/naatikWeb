@@ -6,6 +6,14 @@
         PDO::ATTR_EMULATE_PREPARES => false
     ));
 
+    $nombre = NULL;
+    $apellido = NULL;
+    $universidad = NULL;
+    $carrera = NULL;
+    $semestre = NULL;
+    $promedio = NULL;
+    $idDepartamento = NULL;
+
     if (!empty($_POST)) {
         $nombre = $_POST["nombre"];
         $apellido = $_POST["apellido"];
