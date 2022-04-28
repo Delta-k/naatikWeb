@@ -91,7 +91,7 @@
                 <option value="Español">ES</option>
                 <option value="Ingles">EN</option>
             </select>
-            <a class="nav-items-upper" href="internship.html">Pasantías</a>
+            <a class="nav-items-upper" href="internship.php">Pasantías</a>
             <a class="nav-items-upper" href="https://www.masterchannel.com.mx/">Socios</a>
         </div>
     </div>
@@ -104,7 +104,7 @@
             <a class="nav-items" href="nosotros.html">Nosotros</a>
             <a class="nav-items" href="sectores.html">Sectores </a>
             <a class="nav-items" href="servicios.html">Servicios</a>
-            <a class="nav-items" href="contacto.html">Contacto</a>
+            <a class="nav-items" href="contacto.php">Contacto</a>
         </div>
         <div class="top-text">
             <h1 class="apartado">Estancias para tesis <br> o servicio social</h1>
@@ -325,13 +325,13 @@
                             <tr>
                                 <td><a href="servicios.html">Servicios</a></td>
                                 <td><a href="preguntasFrecuentes.html">Preguntas frecuentes</a></td>
-                                <td><a href="#">Internships</a></td>
+                                <td><a href="internship.php">Internships</a></td>
                             </tr>
                             <tr>
                                 <td><a href="sectores.html">Sectores</a></td>
                             </tr>
                             <tr>
-                                <td><a href="contacto.html">Contacto</a></td>
+                                <td><a href="contacto.php">Contacto</a></td>
                             </tr>
                         </table>
                 </td>
