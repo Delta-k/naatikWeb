@@ -244,7 +244,7 @@
                             id="historial" name="historial"
                             accept="application/pdf" required>
                             <br>
-                            <img src="img/upload_file.png" alt="Sube historial">
+                            <img id="imgHistorial" src="img/upload_file.png" alt="Sube historial">
                         </label>
                         
                     </div>
