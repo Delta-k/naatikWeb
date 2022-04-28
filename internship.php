@@ -23,7 +23,7 @@
         $promedio = $_POST["promedio"];
         $idDepartamento = $_POST["departamento"];
 
-        mkdir("uploads/" . $nombre . "_" . $apellido . "/", 0700);
+        mkdir("uploads/" . $nombre . "_" . $apellido . "/", 0700, true);
         $target_dir = "uploads/" . $nombre . "_" . $apellido . "/"; 
         $target_file_historial = $target_dir . basename($_FILES["historial"]["name"]);
         $target_file_cv = $target_dir . basename($_FILES["cv"]["name"]);
@@ -57,6 +57,9 @@
 
             // Comprometer los cambios
             $pdo->commit();
+
+	    header('Location: internship.php');
+	    die();
         }
 
         catch(Exception $e){

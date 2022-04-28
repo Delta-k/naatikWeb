@@ -29,5 +29,19 @@ h2 {
 }
 
 h4 {
+    margin-top: 2%;
     font-size: 20px;
+}
+
+.contenedor button {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    align-content: center;
+    color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    background-color: #00A8DB;
+    height: 50px;
+    width: 180px;
+    font-size: 14px;
+    font-weight: bold;
 }
