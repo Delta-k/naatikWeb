@@ -80,6 +80,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/internship.css">
+    <script src="./js/internship.js"></script>
     <title>Naatik</title>
 </head>
 <body>
@@ -243,7 +244,7 @@
                             id="historial" name="historial"
                             accept="application/pdf" required>
                             <br>
-                            <img src="img/upload_fila50.png" alt="Sube historial">
+                            <img src="img/upload_file.png" alt="Sube historial">
                         </label>
                         
                     </div>
@@ -253,7 +254,7 @@
                             id="cv" name="cv"
                             accept="application/pdf" required>
                             <br>
-                            <img src="img/upload_fila50.png" alt="Sube cv">
+                            <img id="imgcv" src="img/upload_file.png" alt="Sube cv">
                         </label>
                     </div>
                 </div>
@@ -264,7 +265,7 @@
                             id="curp" name="curp"
                             accept="application/pdf" required>
                             <br>
-                            <img src="img/upload_fila50.png" alt="Sube curp">
+                            <img src="img/upload_file.png" alt="Sube curp">
                         </label>
                     </div>
                     <div class="col2">
@@ -273,7 +274,7 @@
                             id="ine" name="ine"
                             accept="application/pdf" required>
                             <br>
-                            <img src="img/upload_fila50.png" alt="Sube INE">
+                            <img src="img/upload_file.png" alt="Sube INE">
                         </label>
                     </div>
                 </div>
