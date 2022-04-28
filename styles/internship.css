@@ -394,6 +394,10 @@ input[type="file"] {
     margin-left: 10%;
 }
 
+.inscribir img {
+    width: 50px;
+}
+
 /* ------ Todos los estilos dentro del footer ------- */
 .fix {
     clear: both;    
