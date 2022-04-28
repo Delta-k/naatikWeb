@@ -58,7 +58,7 @@
             // Comprometer los cambios
             $pdo->commit();
 
-	    header('Location: internship.php');
+	    header('Location: retro.html');
 	    die();
         }
 
