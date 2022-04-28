@@ -242,7 +242,7 @@
                         <label for="historial" class="required ha">&nbsp; Historial académico:                   
                             <input type="file"
                             id="historial" name="historial"
-                            accept="application/pdf" required>
+                            accept="application/pdf" onchange="subirFileHistorial()" required>
                             <br>
                             <img id="imgHistorial" src="img/upload_file.png" alt="Sube historial">
                         </label>
@@ -252,9 +252,9 @@
                         <label for="cv" class="required cv">&nbsp; Curriculum Vitae: 
                             <input type="file"
                             id="cv" name="cv"
-                            accept="application/pdf" required>
+                            accept="application/pdf" onchange="subirFileCV()" required>
                             <br>
-                            <img id="imgcv" src="img/upload_file.png" alt="Sube cv">
+                            <img id="imgCV" src="img/upload_file.png" alt="Sube cv">
                         </label>
                     </div>
                 </div>
@@ -263,18 +263,18 @@
                         <label for="curp" class="required curp">&nbsp; CURP: 
                             <input type="file"
                             id="curp" name="curp"
-                            accept="application/pdf" required>
+                            accept="application/pdf" onchange="subirFileCURP()" required>
                             <br>
-                            <img src="img/upload_file.png" alt="Sube curp">
+                            <img id="imgCURP" src="img/upload_file.png" alt="Sube curp">
                         </label>
                     </div>
                     <div class="col2">
                         <label for="ine" class="required ine">&nbsp;INE: 
                             <input type="file"
                             id="ine" name="ine"
-                            accept="application/pdf" required>
+                            accept="application/pdf" onchange="subirFileINE()" required>
                             <br>
-                            <img src="img/upload_file.png" alt="Sube INE">
+                            <img id="imgINE" src="img/upload_file.png" alt="Sube INE">
                         </label>
                     </div>
                 </div>
