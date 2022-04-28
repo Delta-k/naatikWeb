@@ -137,6 +137,11 @@ input:not(.boton) {
     height: 35px;
 }
 
+input {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
 #departamento{
     width: 85%;
     height: 35px;

@@ -75,7 +75,7 @@
         <h1>El primer paso a tu solución...</h1>
         
         <div class="form">
-            <form action="" method="">
+            <form action="" method="POST">
                 <div class="row">
                     <div class="tam50 izquierda">
                         <label for="nombre" class="required">Nombre(s) </label>
