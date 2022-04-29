@@ -216,7 +216,7 @@
                     </div>
                     <div class="col2a">
                         <label for="promedio" class="required">Promedio </label>
-                        <input type="number" name="promedio" id="promedio" min="1" max="100" required>
+                        <input type="number" name="promedio" id="promedio" min="1" max="100" placeholder="1-100" required>
                     </div>
                     <div class="col3a">
                         <label for="departamento" class="required">Departamento</label>
@@ -243,9 +243,14 @@
                             <input type="file"
                             id="historial" name="historial"
                             accept="application/pdf" onchange="subirFileHistorial()" required>
-                            <br>
-                            <img id="imgHistorial" src="img/upload_file.png" alt="Sube historial">
-			    <button type="button" id="buttonHA">Borrar</button>
+                            <div class="row">
+                                <div class="img_files" id="img_files_ha">
+                                    <img id="imgHistorial" src="img/upload_file.png" alt="Sube historial">
+                                </div>
+                                <div class="borrar" id="borrarHA">
+                                    <button type="button" id="buttonHA" onclick="vaciarHA()">X</button>
+                                </div>
+                            </div>
                         </label>
                         
                     </div>
@@ -254,8 +259,14 @@
                             <input type="file"
                             id="cv" name="cv"
                             accept="application/pdf" onchange="subirFileCV()" required>
-                            <br>
-                            <img id="imgCV" src="img/upload_file.png" alt="Sube cv">
+                            <div class="row">
+                                <div class="img_files" id="img_files_cv">
+                                    <img id="imgCV" src="img/upload_file.png" alt="Sube cv">
+                                </div>
+                                <div class="borrar" id="borrarCV">
+                                    <button type="button" id="buttonCV" onclick="vaciarCV()">X</button>
+                                </div>
+                            </div>
                         </label>
                     </div>
                 </div>
@@ -265,8 +276,14 @@
                             <input type="file"
                             id="curp" name="curp"
                             accept="application/pdf" onchange="subirFileCURP()" required>
-                            <br>
-                            <img id="imgCURP" src="img/upload_file.png" alt="Sube curp">
+                            <div class="row">
+                                <div class="img_files" id="img_files_curp">
+                                    <img id="imgCURP" src="img/upload_file.png" alt="Sube curp">
+                                </div>
+                                <div class="borrar" id="borrarCURP">
+                                    <button type="button" id="buttonCURP" onclick="vaciarCURP()">X</button>
+                                </div>
+                            </div>
                         </label>
                     </div>
                     <div class="col2">
@@ -274,8 +291,14 @@
                             <input type="file"
                             id="ine" name="ine"
                             accept="application/pdf" onchange="subirFileINE()" required>
-                            <br>
-                            <img id="imgINE" src="img/upload_file.png" alt="Sube INE">
+                            <div class="row">
+                                <div class="img_files" id="img_files_ine">
+                                    <img id="imgINE" src="img/upload_file.png" alt="Sube INE">
+                                </div>
+                                <div class="borrar" id="borrarINE">
+                                    <button type="button" id="buttonINE" onclick="vaciarINE()">X</button>
+                                </div>
+                            </div>
                         </label>
                     </div>
                 </div>
