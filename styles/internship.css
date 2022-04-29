@@ -404,7 +404,7 @@ input[type="file"] {
 }
 
 .inscribir label button {
-    background-color: #91171F;;
+    background-color: #DF2935;
     color: white;
     /* float: right; */
     border: none;
@@ -430,6 +430,7 @@ input[type="file"] {
     width: 50%;
     float: right;
     display: none;
+    cursor: pointer;
 }
 
 /* ------ Todos los estilos dentro del footer ------- */
