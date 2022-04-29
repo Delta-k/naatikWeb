@@ -1,12 +1,22 @@
 * {
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Mulish', sans-serif !important;
     margin: 0;
     padding: 0;
+}
+
+.frente {
+    background-color: #16618F;
+    height: 25px;
 }
 
 a:any-link {
     color: #FFFFFF;
     text-decoration: none;
+}
+
+a:hover{
+    color: #034D82;
+    text-decoration: underline;
 }
 
 /*Menu superior*/
@@ -16,10 +26,11 @@ a:any-link {
     height: 30px;
 }
 
-.upper-nav-block {
-    padding-top: 5px;
-    margin-left: 77%;
-    font-size: small;
+.divisor {
+    font-size: 15px !important;
+    display: inline;
+    margin-left: 2% !important;
+    font-weight: normal !important;
 }
 
 a.nav-items-upper {
@@ -34,8 +45,8 @@ a.nav-items-upper {
 }
 
 a.nav-items {
-    font-size: medium;
-    padding-left: 30px;
+    font-size: large;
+    padding-left: 2%;
 }
 
 /*Seccion de titulo y descripcion*/
@@ -109,6 +120,7 @@ a.nav-items {
     background-color: #EFFBFF;
     overflow: auto;
 }
+
 
 /* --- Beneficios --- */
 .beneficios {
@@ -215,7 +227,10 @@ a.nav-items {
 }
 
 .req1 li{
-    list-style-image: url("../img/listado_necesitas.svg");
+    /* background-image: url("../img/list.png");
+    background-repeat: no-repeat;
+    background-size: 2%;
+    background-position: left center; */
     font-size: 130%;
     color: #034D82;
     padding: 1% 2%;
@@ -236,7 +251,10 @@ a.nav-items {
 }
 
 .req2 li{
-    list-style-image: url("../img/listado_necesitas.svg");
+    /* background-image: url("../img/list.png");
+    background-repeat: no-repeat;
+    background-size: 2%;
+    background-position: left center; */
     font-size: 130%;
     color: #034D82;
     padding: 1% 2%;
@@ -430,6 +448,22 @@ input[type="file"] {
     width: 50%;
     float: right;
     display: none;
+}
+
+.inscribir p {
+    color: grey;
+    font-style: italic;
+    display: inline;
+    float: right;
+    line-height: 50% !important;
+    margin-right: 13%;
+    font-size: 15px;
+}
+
+.inscribir p::before {
+    content:"*";
+    color: red;
+    display: inline;
 }
 
 /* ------ Todos los estilos dentro del footer ------- */

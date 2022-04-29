@@ -85,27 +85,19 @@
 </head>
 <body>
     <!-- Menu superior -->
-    <div class="upper-nav">
-        <div class="upper-nav-block">
-            <a class="nav-items-upper">Lenguaje</a>
-            <select id="lenguaje">
-                <option value="Español">ES</option>
-                <option value="Ingles">EN</option>
-            </select>
-            <a class="nav-items-upper" href="internship.php">Pasantías</a>
-            <a class="nav-items-upper" href="https://www.masterchannel.com.mx/">Socios</a>
-        </div>
-    </div>
-
     <!-- Seccion de Sectores-->
+    <div class="frente">
+    </div>
     <div class="top">
         <div class="main-nav">
             <!--Aqui empieza la barra de navegación principal-->
-            <a class="nav-items" href="index.html">Inicio</a>
-            <a class="nav-items" href="nosotros.html">Nosotros</a>
-            <a class="nav-items" href="sectores.html">Sectores </a>
-            <a class="nav-items" href="servicios.html">Servicios</a>
-            <a class="nav-items" href="contacto.php">Contacto</a>
+            <a class="nav-items" href="index.html">Inicio</a> <p class="divisor">|</p>
+            <a class="nav-items" href="nosotros.html">Nosotros</a> <p class="divisor">|</p>
+            <a class="nav-items" href="sectores.html">Sectores</a> <p class="divisor">|</p>
+            <a class="nav-items" href="servicios.html">Servicios</a> <p class="divisor">|</p>
+            <a class="nav-items" href="contacto.php">Contacto</a> <p class="divisor">|</p>
+            <a class="nav-items" href="https://www.masterchannel.com.mx/">Socios</a> 
+
         </div>
         <div class="top-text">
             <h1 class="apartado">Estancias para tesis <br> o servicio social</h1>
@@ -212,7 +204,7 @@
                 <div class="row">
                     <div class="col1a">
                         <label for="semestre" class="required">Semestre </label>
-                        <input type="number" name="semestre" id="semestre" min="1" max="10" required>
+                        <input type="number" name="semestre" placeholder="1-12" id="semestre" min="1" max="12" required>
                     </div>
                     <div class="col2a">
                         <label for="promedio" class="required">Promedio </label>
@@ -302,9 +294,10 @@
                         </label>
                     </div>
                 </div>
+                <p>&nbsp; Incluye tus archivo en PDF</p>
             </div>
             <div class="row">
-                <input type="submit" value="Enviar" name="submit" class="boton enviar">
+                <input type="submit" value="Enviar" name="submit" onclick="checarFiles()" class="boton enviar">
             </div>
         </form>
     </div>

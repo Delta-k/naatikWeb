@@ -84,3 +84,25 @@ function vaciarINE(){
     document.getElementById("ine").value = null;
     subirFileINE();
 }
+
+
+function checarFiles(){
+    var fileINE = document.getElementById("ine");
+    var fileCURP = document.getElementById("curp");
+    var fileCV = document.getElementById("cv");
+    var fileHA = document.getElementById("historial");
+
+    if (fileINE.files.length == 0) {
+        document.getElementById("imgINE").src = "img/upload_error.png";
+    }
+    if (fileCURP.files.length == 0) {
+        document.getElementById("imgCURP").src = "img/upload_error.png";
+    }
+    if (fileCV.files.length == 0){
+        document.getElementById("imgCV").src = "img/upload_error.png";
+    }
+    if (fileHA.files.length == 0) {
+        document.getElementById("imgHistorial").src = "img/upload_error.png";
+    }
+
+}

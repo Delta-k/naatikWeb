@@ -1,6 +1,6 @@
 <?php
 	class Database {
-		private static $dbName 			= '2005b_01' ;
+		private static $dbName 			= '2005B_01' ;
 		private static $dbHost 			= 'localhost' ;
 		private static $dbUsername 		= 'u2005_01';
 		private static $dbUserPassword 	= 'Q$Tcbo%2nW1K';

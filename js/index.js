@@ -1,5 +1,5 @@
 function mostrarContacto() {
-    document.location.href="contacto.html";
+    document.location.href="contacto.php";
   }
 
 function mostrarSectores() {

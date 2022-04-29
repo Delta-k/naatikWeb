@@ -1,3 +1,14 @@
 .flip-card-block {
     margin-left: 55px;
 }
+.frente {
+    background-color: #16618F;
+    height: 25px;
+}
+
+.divisor {
+    font-size: 15px !important;
+    display: inline;
+    margin-left: 2% !important;
+    font-weight: normal !important;
+}
