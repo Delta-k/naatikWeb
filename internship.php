@@ -245,6 +245,7 @@
                             accept="application/pdf" onchange="subirFileHistorial()" required>
                             <br>
                             <img id="imgHistorial" src="img/upload_file.png" alt="Sube historial">
+			    <button type="button" id="buttonHA">Borrar</button>
                         </label>
                         
                     </div>

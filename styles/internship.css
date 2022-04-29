@@ -399,6 +399,18 @@ input[type="file"] {
     margin-bottom: 3%;
     width: 30px;
     height: 30px;
+    align-content: center
+    float: left;
+}
+
+.inscribir button {
+    background-color: #91171F;
+    color: white;
+    float: right;
+    border: none;
+    width: 40%;
+    margin-top: 8%;
+    border-radius: 50%;
 }
 
 /* ------ Todos los estilos dentro del footer ------- */
