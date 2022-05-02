@@ -294,7 +294,7 @@
                         </label>
                     </div>
                 </div>
-                <p>&nbsp; Incluye tus archivo en PDF</p>
+                <p>&nbsp; Incluye tus archivos en PDF</p>
             </div>
             <div class="row">
                 <input type="submit" value="Enviar" name="submit" onclick="checarFiles()" class="boton enviar">
