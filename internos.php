@@ -42,7 +42,7 @@
 					   	$pdo = Database::connect();
 					   	$sql = 'SELECT i.idIntern AS id,i.universidad AS universidad,i.carrera AS carrera,i.semestre AS semestre ,i.nombre AS nombre, i.apellido AS apellido, i.promedio AS promedio,d.nombre AS departamento
                                 FROM Intern i, Departamento d 
-                                WHERE i.idDepartamento = d.idDepartamento;
+                                WHERE i.idDepartamento = d.idDepartamento';
 	 				   	foreach ($pdo->query($sql) as $row) {
 							echo '<tr>';
     					   	echo '<td>'. $row['nombreAlumno'] . '</td>';
