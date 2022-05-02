@@ -518,3 +518,15 @@ td.footer-menu {
 th {
     text-align: center;
 }
+
+
+/* carousel */
+.col-sm-3 .card{
+    justify-content: center;
+    
+}
+
+.marco {
+    display: flex;
+    justify-content: center;
+}
