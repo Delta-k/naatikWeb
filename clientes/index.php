@@ -14,6 +14,7 @@
     		</div>
 
 			<div class="row">
+				<a href="create.php" class="btn btn-success">Agregar un Cliente</a>
 				<a class="btn" href="../internos/index.php">Internos</a>
 				<a class="btn" href="../departamentos/index.php">Departamentos</a>
 			</div>
