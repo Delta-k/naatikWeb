@@ -102,8 +102,8 @@ p:not(.header p, .nosotros p){
 }
 
 h1 {
-    font-size: 100px;
-    font-weight: bold;
+    font-size: 100px !important;
+    font-weight: bold !important;
 }
 
 .header p{
