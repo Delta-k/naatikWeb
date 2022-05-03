@@ -11,6 +11,15 @@
 		// delete data
 		$pdo = Database::connect();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+		$sql = "DELETE FROM Contacto WHERE idDepartamento = ?";
+		$q = $pdo->prepare($sql);
+		$q->execute(array($id));
+
+		$sql = "DELETE FROM Intern WHERE idDepartamento = ?";
+		$q = $pdo->prepare($sql);
+		$q->execute(array($id));
+
 		$sql = "DELETE FROM Departamento WHERE idDepartamento = ?";
 		$q = $pdo->prepare($sql);
 		$q->execute(array($id));
