@@ -15,7 +15,7 @@
 			$pdo->beginTransaction();
 
 			// Subir query a la base de datos
-			$sql = "INSERT INTO Departamento (nombre) VALUES (?)";
+			$sql = "INSERT INTO Departamento (idDepartamento, nombre) VALUES (NULL, ?)";
 			$stmt = $pdo->prepare($sql);
 			$stmt->execute(array($nombre));
 
