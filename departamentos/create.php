@@ -1,27 +1,27 @@
 <?php
 
-	// $pdo = new PDO('mysql:host=localhost;dbname=2005B_01', 'u2005_01', 'Q$Tcbo%2nW1K', array(
-	// 	PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-	// 	PDO::ATTR_EMULATE_PREPARES => false
-	// ));
+	$pdo = new PDO('mysql:host=localhost;dbname=2005B_01', 'u2005_01', 'Q$Tcbo%2nW1K', array(
+	 	PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+	 	PDO::ATTR_EMULATE_PREPARES => false
+	 ));
 
 	if (!empty($_POST)) {
 		$nombre = $_POST["nombre"];
 
 		try {
 			// Iniciar transaccion
-			// $pdo->beginTransaction();
+			$pdo->beginTransaction();
 
 			// Subir query a la base de datos
 			$sql = "INSERT INTO Departamento (nombre) VALUES (?)";
-			// $stmt = $pdo->prepare($sql);
-			// $stmt->execute(array($nombre));
+			$stmt = $pdo->prepare($sql);
+			$stmt->execute(array($nombre));
 
 			// Comprometer los cambios
-			// $pdo->commit();
+			$pdo->commit();
 
 			header('Location: index.php');
-			// die();
+			die();
 		}
 
 		catch(Exception $e){

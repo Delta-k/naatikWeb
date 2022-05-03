@@ -13,6 +13,9 @@
     $semestre = NULL;
     $promedio = NULL;
     $idDepartamento = NULL;
+    $destinatario = "lperezgarcia29@gmail.com";
+    $asunto = "Aplicacion Pasantia";
+    $mensaje = NULL;
 
     if (!empty($_POST)) {
         $nombre = $_POST["nombre"];
@@ -30,6 +33,8 @@
         $target_file_curp = $target_dir . basename($_FILES["curp"]["name"]);
         $target_file_ine = $target_dir . basename($_FILES["ine"]["name"]);
 
+	//$mensaje = "Nombre: $nombre \r Apellido: $apellido \r Universidad: $universidad \r Carrera: $carrera \r Semestre: $semestre \r Promedio: $promedio \r Departmento: $idDepartamento";
+	$mensaje = "Hola mundo";
         try {
             // Subir archivos a la carpeta uploads
             move_uploaded_file($_FILES["historial"]["tmp_name"], $target_file_historial);
@@ -55,8 +60,11 @@
                 )
             );
 
+	     if(mail($destinatario, $asunto, $mensaje)){
+		     echo "Email enviado";
+	     }
             // Comprometer los cambios
-            $pdo->commit();
+	    $pdo->commit();
 
 	    header('Location: retro.html');
 	    die();
