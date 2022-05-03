@@ -1,38 +1,38 @@
 <?php
 
-	$pdo = new PDO('mysql:host=localhost;dbname=2005B_01', 'u2005_01', 'Q$Tcbo%2nW1K', array(
-		PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-		PDO::ATTR_EMULATE_PREPARES => false
-	));
-	$nombreError = NULL
-	$nombre = NULL;
+	// $pdo = new PDO('mysql:host=localhost;dbname=2005B_01', 'u2005_01', 'Q$Tcbo%2nW1K', array(
+	// 	PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+	// 	PDO::ATTR_EMULATE_PREPARES => false
+	// ));
+	// $nombreError = NULL
+	// $nombre = NULL;
 
-	if (!empty($_POST)) {
-		$nombre = $_POST["nombre"];
+	// if (!empty($_POST)) {
+	// 	$nombre = $_POST["nombre"];
 
-		try {
-			// Iniciar transaccion
-			$pdo->beginTransaction();
+	// 	try {
+	// 		// Iniciar transaccion
+	// 		$pdo->beginTransaction();
 
-			// Subir query a la base de datos
-			$sql = "INSERT INTO Departamento (idDepartamento, nombre) VALUES (NULL, ?)";
-			$stmt = $pdo->prepare($sql);
-			$stmt->execute(array($nombre));
+	// 		// Subir query a la base de datos
+	// 		$sql = "INSERT INTO Departamento (nombre) VALUES (?)";
+	// 		$stmt = $pdo->prepare($sql);
+	// 		$stmt->execute(array($nombre));
 
-			// Comprometer los cambios
-			$pdo->commit();
+	// 		// Comprometer los cambios
+	// 		$pdo->commit();
 
-			header('Location: index.php');
-			die();
-		}
+	// 		header('Location: index.php');
+	// 		die();
+	// 	}
 
-		catch(Exception $e){
-			// Mostrar el mensaje de error
-			echo $e->getMessage();
-			// Retirar los cambios
-			$pdo->rollBack();
-		}
-	}
+	// 	catch(Exception $e){
+	// 		// Mostrar el mensaje de error
+	// 		echo $e->getMessage();
+	// 		// Retirar los cambios
+	// 		$pdo->rollBack();
+	// 	}
+	// }
 ?>
 
 
