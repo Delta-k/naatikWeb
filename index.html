@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
 </head>
 <body>
@@ -83,33 +85,115 @@
         <div class="row sectores">
             <h2 class="titulo"><b>Sectores</b> donde podemos ayudarte</h2> <!-- "Sectores" debe estar resaltado-->
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+        
+            <!-- Carousel  -->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!-- Cara de carousel 1 -->
+                        <div class="marco">
+                            <div class="col-sm-3 card">
+                                <img class="imagen "src="img/tech.png" alt="logo Naatik"><!-- cambiar a logo de salud-->
+                                <h2 class="tar">Manufactura o Fabricante</h2>
+                                <p class="lorems">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                            </div>
+                            <div class="col-sm-3 card">
+                                <img class="imagen "src="img/salud.png" alt="logo Naatik"><!-- cambiar a logo de salud-->
+                                <h2 class="tar">Cuidado de la salud</h2>
+                                <p class="lorems">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                            </div>
 
-            <!-- Tarjeta 1 -->
-            <div class="col-sm-3 card">
-                <img class="imagen "src="img/salud.png" alt="logo Naatik"><!-- cambiar a logo de salud-->
-                <h2 class="tar">Cuidado de la salud</h2>
-                <p class="lorems">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
-            </div>
-            
-            <!-- Tarjeta 2 -->
-            <div class="col-sm-3 card">
-                <img class="imagen"src="img/comunicacion.png"  alt="logo Naatik"><!-- cambiar a logo de comunica-->
-                <h2 class="tar">Comunicación</h2>
-                <p class="lorems">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
-            </div>
-            
-            <!-- Tarjeta 3 -->
-            <div class="col-sm-3 card">
-                <img class="imagen"src="img/energia.png"  alt="logo Naatik"><!-- cambiar a logo de energia-->
-                <h2 class="tar">Energía</h2>
-                <p class="lorems">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
-            </div>
+                            <div class="col-sm-3 card">
+                                <img class="imagen "src="img/energia.png" alt="logo Naatik"><!-- cambiar a logo de salud-->
+                                <h2 class="tar">Energía</h2>
+                                <p class="lorems">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                            </div>
 
-            <!-- Tarjeta 4 -->
-            <div class="col-sm-3 card">
-                <img class="imagen" src="img/transporte.png" alt="logo Naatik"><!-- cambiar a logo de transporte-->
-                <h2 class="tar">Transporte</h2>
-                <p class="lorems"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                            <div class="col-sm-3 card">
+                                <img class="imagen "src="img/servicios-financieros.png" alt="logo Naatik"><!-- cambiar a logo de salud-->
+                                <h2 class="tar">Servicio Financiero</h2>
+                                <p class="lorems">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="carousel-item">
+                        <!-- Cara de carousel 2 -->
+                        <div class="marco">
+                            <div class="col-sm-3 card">
+                                <img class="imagen"src="img/tech.png"  alt="logo Naatik"><!-- cambiar a logo de comunica-->
+                                <h2 class="tar">Tecnología</h2>
+                                <p class="lorems">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                            </div>
+                            <div class="col-sm-3 card">
+                                <img class="imagen"src="img/gobierno.png"  alt="logo Naatik"><!-- cambiar a logo de comunica-->
+                                <h2 class="tar">Gobierno</h2>
+                                <p class="lorems">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                            </div>
+                            <div class="col-sm-3 card">
+                                <img class="imagen"src="img/retail.png"  alt="logo Naatik"><!-- cambiar a logo de comunica-->
+                                <h2 class="tar">Retail</h2>
+                                <p class="lorems">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                            </div>
+                            <div class="col-sm-3 card">
+                                <img class="imagen"src="img/educacion.png"  alt="logo Naatik"><!-- cambiar a logo de comunica-->
+                                <h2 class="tar">Educación</h2>
+                                <p class="lorems">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Tarjeta 3 -->
+                        <div class="marco">
+                            <div class="col-sm-3 card">
+                                <img class="imagen"src="img/logistica.png"  alt="logo Naatik"><!-- cambiar a logo de energia-->
+                                <h2 class="tar">Logística</h2>
+                                <p class="lorems">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                            </div>
+                            <div class="col-sm-3 card">
+                                <img class="imagen"src="img/transporte.png"  alt="logo Naatik"><!-- cambiar a logo de energia-->
+                                <h2 class="tar">Transporte</h2>
+                                <p class="lorems">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                            </div>
+                            <div class="col-sm-3 card">
+                                <img class="imagen"src="img/comunicacion.png"  alt="logo Naatik"><!-- cambiar a logo de energia-->
+                                <h2 class="tar">Cominicación</h2>
+                                <p class="lorems">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                            </div>
+                            <div class="col-sm-3 card">
+                                <img class="imagen"src="img/mkt.png"  alt="logo Naatik"><!-- cambiar a logo de energia-->
+                                <h2 class="tar">Marketing</h2>
+                                <p class="lorems">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <!-- Cara de carousel 4 -->
+                        <div class="marco">
+                            <div class="col-sm-3 card">
+                                <img class="imagen" src="img/entretenimiento.png" alt="logo Naatik"><!-- cambiar a logo de transporte-->
+                                <h2 class="tar">Entretenimiento</h2>
+                                <p class="lorems"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                            </div>
+                            <div class="col-sm-3 card">
+                                <img class="imagen" src="img/turismo.png" alt="logo Naatik"><!-- cambiar a logo de transporte-->
+                                <h2 class="tar">Turismo y Hoteleria</h2>
+                                <p class="lorems"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                            </div>
+                            <div class="col-sm-3 card">
+                                <img class="imagen" src="img/agricultura.png" alt="logo Naatik"><!-- cambiar a logo de transporte-->
+                                <h2 class="tar">Agricultura</h2>
+                                <p class="lorems"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                            </div>
+                            <div class="col-sm-3 card">
+                                <img class="imagen" src="img/Check_green_icon.svg.png" alt="logo Naatik"><!-- cambiar a logo de transporte-->
+                                <h2 class="tar">Otro</h2>
+                                <p class="lorems"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -122,40 +206,57 @@
                 <h2><strong>Más de 30 años de experiencia </strong> en la aplicación de técnicas y metodologías apoyados por científicos y especialistas en diferentes áreas.</h2>
                 <p>Profesionales en el desarrollo y aplicación de Inteligencia Artificial y Ciencia de Datos.</p>
             </div>
-            <div class="col-sm-6 exp2">
-                <div id="comilla">
-                    <h2>''</h2>
-                </div>
+            <div class="col-sm-6 exp2";>
+                <!-- <div id="comilla"> -->
+                <h2>''</h2>
+                <!-- </div> -->
+
+                <!-- Comentarios -->
                 <!-- área de lo que se muestra-->
-                <div id="slideshow">
-                    <!-- contenedor de todas las reviews-->
-                    <div class="slide-wrapper">
-                        <!-- Primera review-->
-                        <div class="slide">
-                            <p class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
-                            <p class="review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
-                            <div class="perfil">
-                                <img src="img/Pablo.jpg" alt="">
-                                <h3>Jaquon Hart</h3>
-                                <p class="position">CEO OF PLUS ULTRA</p>
+
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <!-- Cara de carousel 1 -->
+                            <div class="marco exp">
+                                <div class="col-sm-12">
+                                    <p class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                                    <p class="review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.. “</p>
+                                    <div class="perfil">
+                                        <img src="img/Pablo.jpg" alt="">
+                                        <h3>Pablo 1.0</h3>
+                                        <p class="position">CEO OF PLUS ULTRA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+    
+                        <div class="carousel-item">
+                            <!-- Cara de carousel 2 -->
+                            <div class="marco exp">
+                                <div class="col-sm-12">
+                                    <p class="stars">&#9733; &#9733; &#9733; &#9733;</p>
+                                    <p class="review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                                    <div class="perfil">
+                                        <img src="img/Pablo.jpg" alt="">
+                                        <h3>Pablo 2.0</h3>
+                                        <p class="position">CEO OF FACEBOOK</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="slide">
-                            <p class="stars">&#9733; &#9733; &#9733; &#9733;</p>
-                            <p class="review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
-                            <div class="perfil">
-                                <img src="img/Pablo.jpg" alt="">
-                                <h3>Pablo 2.0</h3>
-                                <p class="position">CEO OF FACEBOOK</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <p class="stars">&#9733; &#9733;</p>
-                            <p class="review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
-                            <div class="perfil">
-                                <img src="img/Pablo.jpg" alt="">
-                                <h3>Pablo 3.0</h3>
-                                <p class="position">CEO OF TECBYTES</p>
+                        <div class="carousel-item">
+                            <!-- Tarjeta 3 -->
+                            <div class="marco exp">
+                                <div class="col-sm-12">
+                                    <p class="stars">&#9733; &#9733;</p>
+                                    <p class="review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.. “</p>
+                                    <div class="perfil">
+                                        <img src="img/Pablo.jpg" alt="">
+                                        <h3>Pablo 3.0</h3>
+                                        <p class="position">CEO OF TECBYTES</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -171,19 +272,19 @@
                     <tr>
                         <td class="footer-social">
                             <p>Encuéntranos en nuestras redes sociales</p>
-                            <button id="face-button" onclick="location.href='https://www.google.com.mx/?hl=es-419'" type="button">
+                            <button id="face-button" onclick="location.href='https://www.facebook.com/NaatikAI/'" type="button">
                                 <svg width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect opacity="0.1" width="42" height="40" rx="20" fill="#D5E2E4"/>
                                     <path d="M24.4102 20L24.8769 17.1044H21.9589V15.2253C21.9589 14.4331 22.3665 13.6609 23.6734 13.6609H25V11.1956C25 11.1956 23.7961 11 22.6451 11C20.242 11 18.6712 12.3869 18.6712 14.8975V17.1044H16V20H18.6712V27H21.9589V20H24.4102Z" fill="#D3D6D8"/>
                                 </svg>  
                             </button>
-                            <button id="twitter-button" onclick="location.href='https://www.google.com.mx/?hl=es-419'" type="button">
+                            <button id="twitter-button" onclick="location.href='https://twitter.com/naatikai'" type="button">
                                 <svg width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect opacity="0.1" width="42" height="40" rx="20" fill="#D5E2E4"/>
                                     <path d="M27.6777 17.0835C28.3027 16.6147 28.8652 16.0522 29.3027 15.396C28.7402 15.646 28.084 15.8335 27.4277 15.896C28.1152 15.4897 28.6152 14.8647 28.8652 14.0835C28.2402 14.4585 27.5215 14.7397 26.8027 14.896C26.1777 14.2397 25.334 13.8647 24.3965 13.8647C22.584 13.8647 21.1152 15.3335 21.1152 17.146C21.1152 17.396 21.1465 17.646 21.209 17.896C18.4902 17.7397 16.0527 16.4272 14.4277 14.4585C14.1465 14.9272 13.9902 15.4897 13.9902 16.1147C13.9902 17.2397 14.5527 18.2397 15.459 18.8335C14.9277 18.8022 14.3965 18.6772 13.959 18.4272V18.4585C13.959 20.0522 15.084 21.3647 16.584 21.6772C16.334 21.7397 16.0215 21.8022 15.7402 21.8022C15.5215 21.8022 15.334 21.771 15.1152 21.7397C15.5215 23.0522 16.7402 23.9897 18.1777 24.021C17.0527 24.896 15.6465 25.4272 14.1152 25.4272C13.834 25.4272 13.584 25.396 13.334 25.3647C14.7715 26.3022 16.4902 26.8335 18.3652 26.8335C24.3965 26.8335 27.6777 21.8647 27.6777 17.521C27.6777 17.3647 27.6777 17.2397 27.6777 17.0835Z" fill="#D3D6D8"/>
                                 </svg>  
                             </button>
-                            <button id="youtube-button" onclick="location.href='https://www.google.com.mx/?hl=es-419'" type="button">
+                            <button id="youtube-button" onclick="location.href='https://www.youtube.com/channel/UCgL1wxyGeuTBaRwBMB3lT6A'" type="button">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect opacity="0.1" width="40" height="40" rx="20" fill="#D5E2E4"/>
                                     <path d="M29.5821 15.1905C29.3521 14.3283 28.6744 13.6492 27.8139 13.4188C26.2542 13 20 13 20 13C20 13 13.7459 13 12.1861 13.4188C11.3256 13.6492 10.6479 14.3283 10.4179 15.1905C10 16.7534 10 20.0141 10 20.0141C10 20.0141 10 23.2749 10.4179 24.8378C10.6479 25.7 11.3256 26.3508 12.1861 26.5812C13.7459 27 20 27 20 27C20 27 26.2541 27 27.8139 26.5812C28.6744 26.3508 29.3521 25.7 29.5821 24.8378C30 23.2749 30 20.0141 30 20.0141C30 20.0141 30 16.7534 29.5821 15.1905ZM17.9545 22.9747V17.0536L23.1818 20.0142L17.9545 22.9747Z" fill="#D3D6D8"/>
@@ -218,7 +319,7 @@
                         </td>
                     </tr>
                 </table>
-                <h4 class="rights">Naatik A.I. Solutions (C) Copyright 2021. Todos los derechos reservados</h2>
+                <h2 class="rights">Naatik A.I. Solutions (C) Copyright 2021. Todos los derechos reservados</h2>
             </footer>
         </div>
     </div>

@@ -9,7 +9,13 @@
 /* nav */
 
 a {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none !important;
+}
+
+a:hover{
+    color: #034D82 !important;
+    text-decoration: underline !important;
 }
 
 select{
@@ -227,6 +233,8 @@ ul {
 
 .sectores p{
     margin: 3%;
+    font-size: large;
+    width: 90%;
 }
 
 .sectores .tar{
@@ -258,17 +266,21 @@ ul {
     background: #ffffff;
     font-size: 14px;
     border-radius: 10%;
-    width: 15%;
+    width: 23%;
     height: 300px;
-    margin-left: 7.8%;
     margin-top: 2%;
     padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sectores img{
     width:35%;
     height: auto;
     margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .sec{
@@ -279,8 +291,8 @@ ul {
 
 .sec button{
     margin: 2%;
-
-    /* margin-left: 10%; */
+    margin-left: auto;
+    margin-right: auto;
     background-color: #00A8DB !important;
     border-color: #00A8DB !important;
     color: #FFFFFF;
@@ -289,6 +301,19 @@ ul {
     font-size: 14px;
     font-weight: bold;
 
+}
+
+/* carousel */
+.marco {
+    display: flex;
+}
+
+.exp{
+    margin-left: 15%;
+}
+
+.marco p{
+    font-size: medium;
 }
 
 
@@ -323,32 +348,22 @@ ul {
 }
 
 .exp2 {
-    width: 45%;
     margin-bottom: 2%;
-    /* border: 1px solid green; */
 }
 
 .exp2 h2 {
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 80px;
     color: #034D82;
-    margin-left: 10%;
-    text-align: left;
-}
-
-#comilla {
-    /* border: 1px solid green; */
-    width: 10%;
-    float: left;
-    margin-top: 5%;
-    text-decoration: dotted;
+    margin-left: 5%;
+    height: 20px;
     font-style: italic;
 }
 
 .stars {
     margin-top: 10%;
     color: #FAAD13;
-    font-size: 25px;
+    font-size: 25px !important;
 }
 
 .slide > p:not(.stars){
@@ -379,40 +394,7 @@ ul {
     /* border: 1px solid red; */
     width: 90%;
     font-weight: bold;
-}
-
-/* Animación */
-
-#slideshow {
-    overflow: hidden;
-    height: 330px;
-    width: 500px;
-    /* margin: 0 auto; */
-}
-
-.slide-wrapper {
-    height: 330px;
-    /*width: 500 * número clases*/
-    width: 1500px;
-    -webkit-animation: slide 18s ease infinite;
-}
-
-.slide {
-    float: left;
-    height: 330px;
-    width: 450px;
-    /* margin-right: 25px; */
-}
-
-@-webkit-keyframes slide {
-    0% {margin-left: 0px;}
-    20% {margin-left: 0px;}
-    30% {margin-left: -500px;}
-    50% {margin-left: -500px;}
-    60% {margin-left: -1000px;}
-    90% {margin-left: -1000px;}
-  }
-  
+} 
 
 /* --- FIN 30 AÑOS ---- */
 
@@ -474,6 +456,22 @@ ul > li {
     clear: both;    
 }
 
+footer p{
+    font-size: medium;
+}
+
+footer .rights{
+    margin-bottom: 20%;
+}
+
+footer a{
+    font-size: medium;
+}
+
+footer th{
+    font-size: medium;
+}
+
 footer {
     margin-top: 60px;
     background-color: #000000;
@@ -511,10 +509,13 @@ td.footer-menu {
 }
 
 .rights{
-    margin-top: 45px;
+    margin-top: 15px;
     text-align: center;
+    font-size: medium;
+    font-weight: bold; 
 }
 
 th {
     text-align: center;
 }
+
