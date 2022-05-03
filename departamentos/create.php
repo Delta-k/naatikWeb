@@ -26,13 +26,13 @@
 	// 		die();
 	// 	}
 
-		catch(Exception $e){
-			// Mostrar el mensaje de error
-			echo $e->getMessage();
-			// Retirar los cambios
-			$pdo->rollBack();
-		}
-	}
+	// 	catch(Exception $e){
+	// 		// Mostrar el mensaje de error
+	// 		echo $e->getMessage();
+	// 		// Retirar los cambios
+	// 		$pdo->rollBack();
+	// 	}
+	// }
 ?>
 
 
