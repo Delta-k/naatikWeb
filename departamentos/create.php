@@ -1,32 +1,36 @@
 <?php
 
-	require '../database.php';
+	$pdo = new PDO('mysql:host=localhost;dbname=2005B_01', 'u2005_01', 'Q$Tcbo%2nW1K', array(
+		PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+		PDO::ATTR_EMULATE_PREPARES => false
+	));
+	$nombreError = NULL
+	$nombre = NULL;
 
-    $nombreError = null;
+	if (!empty($_POST)) {
+		$nombre = $_POST["nombre"];
 
+		try {
+			// Iniciar transaccion
+			$pdo->beginTransaction();
 
-	if ( !empty($_POST)) {
+			// Subir query a la base de datos
+			$sql = "INSERT INTO Departamento (nombre) VALUES (?)";
+			$stmt = $pdo->prepare($sql);
+			$stmt->execute(array($nombre));
 
-		// keep track post values
-		$nombre = $_POST['nombre'];
+			// Comprometer los cambios
+			$pdo->commit();
 
-		// validate input
-		$valid = true;
-
-		if (empty($nombre)) {
-			$nombre = 'Por favor escribe un nombre para el nuevo departamento';
-			$valid = false;
+			header('Location: index.php');
+			die();
 		}
 
-		// insert data
-		if ($valid) {
-			$pdo = Database::connect();
-			$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			$sql = "INSERT INTO Departamento (nombre) values(?)";
-			$q = $pdo->prepare($sql);
-			$q->execute(array($nombre));
-			Database::disconnect();
-			header("Location: index.php");
+		catch(Exception $e){
+			// Mostrar el mensaje de error
+			echo $e->getMessage();
+			// Retirar los cambios
+			$pdo->rollBack();
 		}
 	}
 ?>
@@ -35,8 +39,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	    <meta 	charset="utf-8">
-	    <link   href=	"../styles/bootstrap.min.css" rel="stylesheet">
+	    <meta charset="utf-8">
+	    <link href=	"../styles/bootstrap.min.css" rel="stylesheet">
 	</head>
 
 	<body>
