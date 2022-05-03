@@ -4,8 +4,8 @@
     //     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     //     PDO::ATTR_EMULATE_PREPARES => false
     // ));
-	// $nombreError = NULL
-	// $nombre = NULL;
+	$nombreError = null
+	$nombre = null;
 
 	// if (!empty($_POST)) {
 	// 	$nombre = $_POST["nombre"];
