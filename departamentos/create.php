@@ -4,18 +4,18 @@
     //     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     //     PDO::ATTR_EMULATE_PREPARES => false
     // ));
-	$nombreError = NULL
-	$nombre = NULL;
+	// $nombreError = NULL
+	// $nombre = NULL;
 
-	if (!empty($_POST)) {
-		$nombre = $_POST["nombre"];
+	// if (!empty($_POST)) {
+	// 	$nombre = $_POST["nombre"];
 
-		try {
+		// try {
 			// Iniciar transaccion
-			$pdo->beginTransaction();
+			// $pdo->beginTransaction();
 
 			// Subir query a la base de datos
-			$sql = "INSERT INTO Departamento (nombre) VALUES (?)";
+			// $sql = "INSERT INTO Departamento (nombre) VALUES (?)";
 			// $stmt = $pdo->prepare($sql);
 			// $stmt->execute(array($nombre));
 
@@ -24,7 +24,7 @@
 
 			// header('Location: index.php');
 			// die();
-		}
+		// }
 
 	// 	catch(Exception $e){
 	// 		// Mostrar el mensaje de error
