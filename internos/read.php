@@ -59,7 +59,7 @@
                     
                 
 					<div class="control-group">
-					    <label class="control-label">apellido</label>
+					    <label class="control-label">Apellido</label>
 					    <div class="controls">
 					      	<label class="checkbox">
 						     	<?php echo $data['apellido'];?>
@@ -87,7 +87,7 @@
 					</div>
 
                     <div class="control-group">
-						<label class="control-label">semestre</label>
+						<label class="control-label">Semestre</label>
 					    <div class="controls">
 					      	<label class="checkbox">
 						    	<?php echo $data['semestre'];?>
@@ -96,7 +96,7 @@
 					</div>
 
                     <div class="control-group">
-						<label class="control-label">promedio</label>
+						<label class="control-label">Promedio</label>
 					    <div class="controls">
 					      	<label class="checkbox">
 						    	<?php echo $data['promedio'];?>
