@@ -18,6 +18,10 @@ a:hover{
     text-decoration: underline !important;
 }
 
+a.button {
+    color: #034D82 !important;
+}
+
 select{
     color: #121314;
 }
@@ -60,13 +64,10 @@ p:not(.header p, .nosotros p){
 /* ------ HEADER NAATIK -------- */
 
 .header .col-sm-6 {
-    /* border: 2px solid red; */
     display: block;
-    /* margin-bottom: 10%; */
 }
 
 .header .col-sm-6 img {
-    /* border: 2px solid green; */
     margin-left: 12%;
     margin-top: 10%;
 }
@@ -98,7 +99,6 @@ p:not(.header p, .nosotros p){
 
 .header {
     background: linear-gradient(to bottom left, #27C0EF, #cfdee6);
-    /* border: 2px solid blue; */
 }
 
 h1 {
@@ -116,7 +116,6 @@ h1, .header p {
     margin-top: 10%;
     margin-left: 10%;
     color: #FFFFFF;
-    /* border: 1px solid green; */
 } 
 
 /* ------- FIN HEADER NAATIK -------- */
@@ -197,7 +196,6 @@ h1, .header p {
     line-height: 40px;
     margin-top: 1%;
     list-style-image: url("../img/listado_necesitas.svg");
-    /* border: 1px solid blue; */
 }
 
 .nec2 {
@@ -211,7 +209,6 @@ h1, .header p {
 }
 
 ul {
-    /* border: 1px solid yellow; */
     margin-bottom: 5%;
 }
 
@@ -220,7 +217,6 @@ ul {
     color: #04AADD;
     font-size: 18px;
     margin-left: 10%;
-    /* border: 1px solid green; */
 }
 
 /* --- INICIA PARTE LEO ---- */  
