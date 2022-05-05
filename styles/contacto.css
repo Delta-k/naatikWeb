@@ -1,3 +1,10 @@
+h1.naatik-name {
+    color: #ffffff !important;
+    font-family: 'Mulish', sans-serif !important;
+    font-size: 100px !important;
+    font-weight: bold !important;
+}
+
 /* nav */
 .upper-nav {
     color: #ffffff;

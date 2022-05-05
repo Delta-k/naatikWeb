@@ -71,6 +71,7 @@
     <title>Contacto</title>
 </head>
 <body>
+    <h1 class="naatik-name" >Naatik</h1>
     <div class="Contacto">
         <h1>El primer paso a tu solución...</h1>
         
