@@ -35,7 +35,6 @@
 		                </tr>
 		            </thead>
 
-
 		            <tbody>
 		              	<?php
 							include '../database.php';

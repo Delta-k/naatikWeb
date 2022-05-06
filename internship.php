@@ -1,5 +1,4 @@
 <?php
-    //require_once 'database.php';
 
     $pdo = new PDO('mysql:host=localhost;dbname=2005B_01', 'u2005_01', 'Q$Tcbo%2nW1K', array(
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
@@ -13,9 +12,14 @@
     $semestre = NULL;
     $promedio = NULL;
     $idDepartamento = NULL;
-    $destinatario = "lperezgarcia29@gmail.com";
-    $asunto = "Aplicacion Pasantia";
-    $mensaje = NULL;
+
+    // obtener última query
+    $sql = "SELECT MAX(idIntern) AS maxID FROM Intern;";
+    $stmt = ($pdo->prepare($sql));
+    // $id = $stmt->execute();
+    foreach ($pdo->query($sql) as $id) {
+        $id = $id['maxID'] + 1;
+    }
 
     if (!empty($_POST)) {
         $nombre = $_POST["nombre"];
@@ -26,25 +30,12 @@
         $promedio = $_POST["promedio"];
         $idDepartamento = $_POST["departamento"];
 
-        mkdir("uploads/" . $nombre . "_" . $apellido . "/", 0700, true);
-        $target_dir = "uploads/" . $nombre . "_" . $apellido . "/"; 
-        $target_file_historial = $target_dir . basename($_FILES["historial"]["name"]);
-        $target_file_cv = $target_dir . basename($_FILES["cv"]["name"]);
-        $target_file_curp = $target_dir . basename($_FILES["curp"]["name"]);
-        $target_file_ine = $target_dir . basename($_FILES["ine"]["name"]);
-
-	//$mensaje = "Nombre: $nombre \r Apellido: $apellido \r Universidad: $universidad \r Carrera: $carrera \r Semestre: $semestre \r Promedio: $promedio \r Departmento: $idDepartamento";
-	$mensaje = "Hola mundo";
+        
         try {
-            // Subir archivos a la carpeta uploads
-            move_uploaded_file($_FILES["historial"]["tmp_name"], $target_file_historial);
-            move_uploaded_file($_FILES["cv"]["tmp_name"], $target_file_cv);
-            move_uploaded_file($_FILES["curp"]["tmp_name"], $target_file_curp);
-            move_uploaded_file($_FILES["ine"]["tmp_name"], $target_file_ine);
-
 
             // Iniciar transaccion
             $pdo->beginTransaction();
+
 
             // Subir query a la base de datos
             $sql = "INSERT INTO Intern (nombre, apellido, universidad, carrera, semestre, promedio, idDepartamento) VALUES (?, ?, ?, ?, ?, ?, ?)";
@@ -60,14 +51,26 @@
                 )
             );
 
-	     if(mail($destinatario, $asunto, $mensaje)){
-		     echo "Email enviado";
-	     }
             // Comprometer los cambios
-	    $pdo->commit();
+            $pdo->commit();
 
-	    header('Location: retro.html');
-	    die();
+            // Crear carpeta
+
+            mkdir("uploads/" . $id . "/", 0700, true);
+            $target_dir = "uploads/" . $id . "/"; 
+            $target_file_historial = $target_dir . basename($_FILES["historial"]["name"]);
+            $target_file_cv = $target_dir . basename($_FILES["cv"]["name"]);
+            $target_file_curp = $target_dir . basename($_FILES["curp"]["name"]);
+            $target_file_ine = $target_dir . basename($_FILES["ine"]["name"]);
+
+            // Subir archivos a la carpeta uploads
+            move_uploaded_file($_FILES["historial"]["tmp_name"], $target_file_historial);
+            move_uploaded_file($_FILES["cv"]["tmp_name"], $target_file_cv);
+            move_uploaded_file($_FILES["curp"]["tmp_name"], $target_file_curp);
+            move_uploaded_file($_FILES["ine"]["tmp_name"], $target_file_ine);
+            
+            header('Location: retro.html');
+            die();
         }
 
         catch(Exception $e){
