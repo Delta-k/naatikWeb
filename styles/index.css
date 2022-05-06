@@ -245,12 +245,13 @@ ul {
 
 .sectores .titulo{
     font-family: 'Mulish', sans-serif;
-    font-weight: 700;
+    font-weight: normal;
     font-size: 36px;
     line-height: 52px;
     text-align: center;
     letter-spacing: 0.3px;
     color: #034D82;
+    margin-top: 3%;
 }
 
 .sectores .lorems{
