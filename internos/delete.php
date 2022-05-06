@@ -14,6 +14,13 @@
 		$sql = "DELETE FROM Intern WHERE idIntern = ?";
 		$q = $pdo->prepare($sql);
 		$q->execute(array($id));
+
+		// Eliminar los pdfs asociados a ese interno
+		$dir = '../uploads/' . $id . '/';
+		array_map('unlink', glob("{$dir}*.pdf"));
+		// Eliminar la carpeta asociada a ese interno
+		rmdir($dir);
+
 		Database::disconnect();
 		header("Location: index.php");
 	}
@@ -35,7 +42,7 @@
 
 			    <form class="form-horizontal" action="delete.php" method="POST">
 		    		<input type="hidden" name="id" value="<?php echo $id;?>"/>
-					<p class="alert alert-error">¿Estás seguro que quieres eliminar este interno?</p>
+					<p class="alert alert-error">¿Estás seguro que quieres eliminar este interno? Se borrarán también los archivos relacionados a este aplicante.</p>
 					<div class="form-actions">
 						<button type="submit" class="btn btn-danger">Si</button>
 						<a class="btn" href="index.php">No</a>
