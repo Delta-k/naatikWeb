@@ -54,6 +54,7 @@
 	<head>
 	    <meta charset="utf-8">
 	    <link href=	"../styles/bootstrap.min.css" rel="stylesheet">
+		<link rel="icon" href="img/logo-naatik-3.png">
 	</head>
 
 	<body>

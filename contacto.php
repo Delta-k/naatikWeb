@@ -64,6 +64,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo-naatik-3.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;800&display=swap" rel="stylesheet">
@@ -71,6 +72,7 @@
     <title>Contacto</title>
 </head>
 <body>
+    <h1 class="naatik-name">Naatik</h1>
     <div class="Contacto">
         <h1>El primer paso a tu solución...</h1>
         
