@@ -55,13 +55,12 @@
             $pdo->commit();
 
             // Crear carpeta
-
             mkdir("uploads/" . $id . "/", 0700, true);
             $target_dir = "uploads/" . $id . "/"; 
-            $target_file_historial = $target_dir . basename($_FILES["historial"]["name"]);
-            $target_file_cv = $target_dir . basename($_FILES["cv"]["name"]);
-            $target_file_curp = $target_dir . basename($_FILES["curp"]["name"]);
-            $target_file_ine = $target_dir . basename($_FILES["ine"]["name"]);
+            $target_file_historial = $target_dir . "Historial Académico" . $nombre . " " . $apellido . ".pdf" ;
+            $target_file_cv = $target_dir . "CV " . $nombre . " " . $apellido . ".pdf";
+            $target_file_curp = $target_dir . "CURP " . $nombre . " " . $apellido . ".pdf";
+            $target_file_ine = $target_dir . "INE " . $nombre . " " . $apellido . ".pdf";
 
             // Subir archivos a la carpeta uploads
             move_uploaded_file($_FILES["historial"]["tmp_name"], $target_file_historial);
